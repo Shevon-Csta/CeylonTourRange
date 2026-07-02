@@ -3,9 +3,10 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import TrailCard from "@/components/trails/TrailCard";
 import { trails } from "@/lib/data/trails";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Explore Trails | Ceylon Tour Range",
+  title: `Explore Trails | ${SITE_NAME}`,
 };
 
 export default function TrailsPage() {

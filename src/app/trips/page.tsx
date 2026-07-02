@@ -3,9 +3,10 @@ import { MapPinned } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "My Trips | Ceylon Tour Range",
+  title: `My Trips | ${SITE_NAME}`,
 };
 
 /**

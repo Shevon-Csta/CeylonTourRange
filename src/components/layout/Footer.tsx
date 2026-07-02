@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Palmtree } from "lucide-react";
+import { TreePalm } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SocialLinks from "@/components/layout/SocialLinks";
 import { trails } from "@/lib/data/trails";
+import { BRAND_NAME, BRAND_SUFFIX, SITE_NAME } from "@/lib/site";
 
 const quickLinks = [
   { href: "/trails", label: "Explore Trails" },
@@ -18,8 +19,10 @@ export default function Footer() {
       <Container className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <Palmtree className="h-5 w-5 text-brand-primary" strokeWidth={1.75} />
-            <span className="font-display text-base font-semibold">Ceylon Tour Range</span>
+            <TreePalm className="h-5 w-5 text-brand-primary" strokeWidth={1.75} />
+            <span className="font-display text-base font-semibold">
+              {BRAND_NAME} <span className="font-normal text-brand-cream/70">{BRAND_SUFFIX}</span>
+            </span>
           </div>
           <p className="text-sm text-brand-cream/70">
             A themed trip planner for Sri Lanka — pick an experience, get a ready-made
@@ -65,7 +68,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10 py-6">
         <Container className="flex flex-col items-center justify-between gap-2 text-xs text-brand-cream/50 sm:flex-row">
-          <span>&copy; {new Date().getFullYear()} Ceylon Tour Range. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} {SITE_NAME}. All rights reserved.</span>
           <span>Built for Mr. Mayura.</span>
         </Container>
       </div>

@@ -6,6 +6,7 @@ import { ButtonLink } from "@/components/ui/Button";
 import TrailHero from "@/components/trails/TrailHero";
 import DayByDayPreview from "@/components/trails/DayByDayPreview";
 import { trails, getTrailBySlug } from "@/lib/data/trails";
+import { SITE_NAME } from "@/lib/site";
 
 type PageParams = Promise<{ slug: string }>;
 
@@ -20,7 +21,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const trail = getTrailBySlug(slug);
-  return { title: trail ? `${trail.name} | Ceylon Tour Range` : "Trail not found" };
+  return { title: trail ? `${trail.name} | ${SITE_NAME}` : "Trail not found" };
 }
 
 export default async function TrailDetailPage({ params }: { params: PageParams }) {

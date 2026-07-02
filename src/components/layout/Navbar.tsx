@@ -3,10 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Palmtree } from "lucide-react";
+import { Menu, X, TreePalm } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import Container from "@/components/ui/Container";
 import { ButtonLink } from "@/components/ui/Button";
+import { BRAND_NAME, BRAND_SUFFIX } from "@/lib/site";
 
 const navLinks = [
   { href: "/trails", label: "Explore Trails" },
@@ -23,9 +24,14 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-brand-dark/10 bg-brand-cream/90 backdrop-blur">
       <Container className="flex h-18 items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <Palmtree className="h-6 w-6 text-brand-primary" strokeWidth={1.75} />
-          <span className="font-display text-lg font-semibold text-brand-dark">
-            Ceylon Tour Range
+          <TreePalm className="h-6 w-6 text-brand-primary" strokeWidth={1.75} />
+          <span className="flex flex-col leading-tight">
+            <span className="font-display text-lg font-semibold text-brand-dark">
+              {BRAND_NAME}
+            </span>
+            <span className="text-[11px] font-medium uppercase tracking-wide text-brand-primary-dark">
+              {BRAND_SUFFIX}
+            </span>
           </span>
         </Link>
 

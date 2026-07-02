@@ -1,4 +1,4 @@
-# Ceylon Tour Range
+# Ceylon Tour Range by Nonis
 
 A themed trip planner for Sri Lanka. A tourist picks a trail — Coastal,
 Heritage, Wild, or Modern — and gets a ready-made day-by-day itinerary with
@@ -54,6 +54,9 @@ src/
 
   lib/
     types.ts                 Shared types (Trail, ItineraryDay, ...)
+    site.ts                  Brand name (SITE_NAME / BRAND_NAME / BRAND_SUFFIX)
+                               — every page title, the navbar, and the footer
+                               read from here. Change the name once, here.
     data/trails.ts            The four trails' content — routes, day-by-day,
                                activities, vehicle notes. Edit this file to
                                change trail content; no component code needed.
@@ -63,7 +66,8 @@ The rule of thumb: **page files stay thin** (they fetch/select data and
 lay out components); the actual UI lives in `components/`; content lives in
 `lib/data/`. If you need to change what a trail says, edit
 `lib/data/trails.ts` — you should never need to touch a `.tsx` file just to
-change wording.
+change wording. Same goes for the brand name: edit `lib/site.ts`, not a
+grep-and-replace across the app.
 
 ## Design tokens
 

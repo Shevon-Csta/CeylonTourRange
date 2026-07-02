@@ -1,6 +1,6 @@
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { Calendar, Compass, SlidersHorizontal, CheckCircle2 } from "lucide-react";
+import { Calendar, Compass, SlidersHorizontal, CircleCheck } from "lucide-react";
 
 const steps = [
   {
@@ -19,7 +19,7 @@ const steps = [
     description: "Swap stops, change the vehicle, pick hotels and restaurants along the way.",
   },
   {
-    Icon: CheckCircle2,
+    Icon: CircleCheck,
     title: "Book and go",
     description: "Confirm your itinerary and everything is arranged before you land.",
   },

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Baloo_2 } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { SITE_NAME } from "@/lib/site";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,7 +17,7 @@ const baloo = Baloo_2({
 });
 
 export const metadata: Metadata = {
-  title: "Ceylon Tour Range | Plan Your Sri Lanka Journey",
+  title: `${SITE_NAME} | Plan Your Sri Lanka Journey`,
   description:
     "Pick a themed trail — coastal, cultural, wild, or modern — and get a ready-made Sri Lanka itinerary you can make your own.",
 };

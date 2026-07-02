@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
-  Design tokens for Ceylon Tour Range.
+  Design tokens for Ceylon Tour Range by Nonis.
 
   Pattern: raw values live under plain `--name` in :root (so they can be
   overridden later, e.g. a dark mode media query). The `@theme inline`

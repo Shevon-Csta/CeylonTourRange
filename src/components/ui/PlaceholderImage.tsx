@@ -1,4 +1,4 @@
-import { ImageIcon } from "lucide-react";
+import { Image as ImageIcon } from "lucide-react";
 
 interface PlaceholderImageProps {
   label: string;

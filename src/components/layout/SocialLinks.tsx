@@ -1,4 +1,5 @@
-import { Facebook, Instagram, Youtube, MessageCircle } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { FacebookIcon, InstagramIcon, YoutubeIcon } from "@/components/icons/SocialIcons";
 
 /**
  * Social access points, as requested — Mayura hasn't provided the real
@@ -6,9 +7,9 @@ import { Facebook, Instagram, Youtube, MessageCircle } from "lucide-react";
  * URLs as soon as they're available; nothing else needs to change.
  */
 const links = [
-  { label: "Facebook", href: "#", Icon: Facebook },
-  { label: "Instagram", href: "#", Icon: Instagram },
-  { label: "YouTube", href: "#", Icon: Youtube },
+  { label: "Facebook", href: "#", Icon: FacebookIcon },
+  { label: "Instagram", href: "#", Icon: InstagramIcon },
+  { label: "YouTube", href: "#", Icon: YoutubeIcon },
   { label: "WhatsApp", href: "#", Icon: MessageCircle },
 ];
 
