@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/*
+  Design tokens for Ceylon Tour Range.
+
+  Pattern: raw values live under plain `--name` in :root (so they can be
+  overridden later, e.g. a dark mode media query). The `@theme inline`
+  block re-exposes each one as `--color-name`, which is what Tailwind
+  turns into utility classes (bg-brand-primary, text-coastal, etc.) and
+  what components reference directly via var(--color-...) for anything
+  Tailwind can't generate a static class for (see PlaceholderImage).
+
+  Brand tokens = used site-wide (nav, buttons, headings).
+  Trail tokens = one warm palette per themed trail (see lib/data/trails.ts).
+*/
+:root {
+  --background: #fffaf3;
+  --foreground: #241c15;
+
+  /* Brand */
+  --brand-primary: #e8871e; /* sunset gold/orange — primary CTA color */
+  --brand-primary-dark: #c96a0e;
+  --brand-dark: #16302b; /* deep teal-green — dark sections, footer */
+  --brand-cream: #fffaf3; /* warm off-white page background */
+  --brand-sand: #f4e9d8;
+
+  /* Coastal Ceylon — ocean blues, sandy neutrals */
+  --coastal: #0e7c86;
+  --coastal-dark: #0a5860;
+  --coastal-light: #eaf6f6;
+
+  /* Heritage Ceylon — warm gold, maroon, stone */
+  --heritage: #8b2635;
+  --heritage-dark: #6b1c28;
+  --heritage-light: #fbf3e7;
+
+  /* Wild Ceylon — earthy greens, burnt orange */
+  --wild: #3f6b3f;
+  --wild-dark: #2c4d2c;
+  --wild-light: #f1f5ec;
+
+  /* Modern Ceylon — charcoal, white, coral accent */
+  --modern: #1a1a1a;
+  --modern-dark: #050505;
+  --modern-accent: #ff6b4a;
+  --modern-light: #f5f5f4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-primary-dark: var(--brand-primary-dark);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-sand: var(--brand-sand);
+
+  --color-coastal: var(--coastal);
+  --color-coastal-dark: var(--coastal-dark);
+  --color-coastal-light: var(--coastal-light);
+
+  --color-heritage: var(--heritage);
+  --color-heritage-dark: var(--heritage-dark);
+  --color-heritage-light: var(--heritage-light);
+
+  --color-wild: var(--wild);
+  --color-wild-dark: var(--wild-dark);
+  --color-wild-light: var(--wild-light);
+
+  --color-modern: var(--modern);
+  --color-modern-dark: var(--modern-dark);
+  --color-modern-accent: var(--modern-accent);
+  --color-modern-light: var(--modern-light);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-baloo);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Utility for the placeholder "image" blocks used until real photography
+   is dropped in — see components/ui/PlaceholderImage.tsx */
+.placeholder-texture {
+  background-image: radial-gradient(
+    circle at 20% 20%,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0) 45%
+  );
+}
