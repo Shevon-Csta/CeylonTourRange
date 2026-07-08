@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Complete booking — Ceylon Tour Range</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range</a>
+    <div class="nav-cta" style="margin-left:auto;"><span class="small muted">🔒 Secure checkout</span></div>
+  </div>
+</nav>
+
+<section class="section" style="padding-top: 40px;">
+  <div class="container" style="max-width: 1000px;">
+    <!-- Steps -->
+    <div class="steps">
+      <div class="step done"><span class="dot">✓</span> Room</div>
+      <div class="step-line done"></div>
+      <div class="step current"><span class="dot">2</span> Guest details</div>
+      <div class="step-line"></div>
+      <div class="step"><span class="dot">3</span> Payment</div>
+      <div class="step-line"></div>
+      <div class="step"><span class="dot">4</span> Confirmation</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1fr 360px; gap:32px; align-items:start;">
+      <div>
+        <div class="panel reveal is-visible">
+          <h3 class="mb-2">Guest details</h3>
+          <div class="form-row">
+            <div class="field"><label>First name</label><input class="input" value="Shevon" /></div>
+            <div class="field"><label>Last name</label><input class="input" value="Costa" /></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Email</label><input class="input" value="shevoncosta5@gmail.com" /></div>
+            <div class="field"><label>Phone</label><input class="input" placeholder="+94 77 123 4567" /></div>
+          </div>
+          <div class="field"><label>Special requests (optional)</label><textarea class="input" rows="3" placeholder="Early check-in, honeymoon setup…"></textarea></div>
+        </div>
+
+        <div class="panel mt-3 reveal is-visible">
+          <h3 class="mb-2">Payment</h3>
+          <div class="tabs"><button class="tab active">💳 Card</button><button class="tab">PayPal</button><button class="tab">Pay at hotel</button></div>
+          <div class="field"><label>Card number</label><input class="input" placeholder="1234 5678 9012 3456" /></div>
+          <div class="form-row">
+            <div class="field"><label>Expiry</label><input class="input" placeholder="MM / YY" /></div>
+            <div class="field"><label>CVC</label><input class="input" placeholder="•••" /></div>
+          </div>
+          <label class="small muted"><input type="checkbox" checked /> I agree to the <a href="legal.html" style="color:var(--teal-700); font-weight:700;">Terms</a> and <a href="legal.html" style="color:var(--teal-700); font-weight:700;">Cancellation policy</a></label>
+          <button class="btn btn-accent btn-block btn-lg mt-3">Confirm &amp; pay $289</button>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <aside class="panel reveal is-visible" style="position:sticky; top:96px; padding:0; overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Ella Ridge Resort" style="height:150px; width:100%; object-fit:cover;" />
+        <div style="padding:22px;">
+          <strong>Ella Ridge Resort &amp; Spa</strong>
+          <div class="rating small">★★★★★ 4.8</div>
+          <div class="divider"></div>
+          <div class="flex-between small"><span class="muted">Room</span><span>Deluxe Valley View</span></div>
+          <div class="flex-between small"><span class="muted">Check-in</span><span>Thu, 14 Aug 2026</span></div>
+          <div class="flex-between small"><span class="muted">Check-out</span><span>Sun, 17 Aug 2026</span></div>
+          <div class="flex-between small"><span class="muted">Guests</span><span>2 adults</span></div>
+          <div class="divider"></div>
+          <div class="flex-between small"><span class="muted">$86 × 3 nights</span><span>$258</span></div>
+          <div class="flex-between small"><span class="muted">Taxes &amp; fees</span><span>$31</span></div>
+          <div class="flex-between mt-2"><strong>Total</strong><strong class="price">$289</strong></div>
+          <div class="badge badge-green mt-2">Free cancellation until 12 Aug</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none; padding-top:0;">
+    <span>© 2026 Ceylon Tour Range</span>
+    <span><a href="faq.html">Help</a></span>
+  </div>
+</footer>
+
+<script src="assets/mock.js"></script>
+</body>
+</html>

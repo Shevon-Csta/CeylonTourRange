@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tour Guide Portal — Ceylon Tour Range</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <span class="badge badge-amber">Guide Portal</span></a>
+    <div class="nav-cta" style="margin-left:auto;"><div class="avatar" style="background:linear-gradient(135deg, var(--teal-700), var(--teal-500));">NG</div></div>
+  </div>
+</nav>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <span class="side-title">Guide tools</span>
+    <a href="guide-portal.html" class="active">📊 Overview</a>
+    <a href="guide-portal.html">📍 My places</a>
+    <a href="guide-portal.html">🏨 My hotels</a>
+    <a href="guide-portal.html">🎉 Events</a>
+    <a href="guide-portal.html">⭐ Reviews</a>
+    <span class="side-title">Account</span>
+    <a href="guide-portal.html">👤 Guide profile</a>
+    <a href="login.html">↩ Log out</a>
+  </aside>
+
+  <main class="app-main">
+    <div class="app-header">
+      <div><h2 style="font-size:1.7rem;">Guide overview</h2><p class="muted small">Nuwan Gamage · Verified guide since 2024 · ★ 4.9</p></div>
+      <button class="btn btn-accent">+ Add new place</button>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-label">Places listed</div><div class="stat-value">23</div><span class="stat-delta up">▲ 2 this month</span></div>
+      <div class="stat"><div class="stat-label">Total visits</div><div class="stat-value">18.4k</div><span class="stat-delta up">▲ 12% vs July</span></div>
+      <div class="stat"><div class="stat-label">Avg. rating</div><div class="stat-value">4.8</div><span class="stat-delta">across 1,240 reviews</span></div>
+      <div class="stat"><div class="stat-label">Pending approval</div><div class="stat-value">2</div><span class="stat-delta down">1 needs edits</span></div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1.4fr 1fr; gap:24px; align-items:start;">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Place</th><th>Category</th><th>Visits</th><th>Rating</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Secret Ella Viewpoint</strong></td><td>Hiking</td><td>3,120</td><td>★ 4.9</td><td><span class="badge badge-green">Live</span></td></tr>
+            <tr><td><strong>Halpewatte Tea Factory</strong></td><td>Culture</td><td>2,860</td><td>★ 4.7</td><td><span class="badge badge-green">Live</span></td></tr>
+            <tr><td><strong>Idalgashinna Rail Walk</strong></td><td>Hiking</td><td>—</td><td>—</td><td><span class="badge badge-amber">In review</span></td></tr>
+            <tr><td><strong>Nil Diya Pokuna Cave</strong></td><td>Adventure</td><td>—</td><td>—</td><td><span class="badge badge-red">Edits requested</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add place form -->
+      <div class="panel">
+        <h3 class="mb-2">Quick add place</h3>
+        <div class="field"><label>Place name</label><input class="input" placeholder="e.g. Diyaluma Falls upper pools" /></div>
+        <div class="form-row">
+          <div class="field"><label>Category</label><select class="input"><option>Hiking</option><option>Heritage</option><option>Beach</option><option>Wildlife</option></select></div>
+          <div class="field"><label>District</label><select class="input"><option>Badulla</option><option>Kandy</option><option>Galle</option></select></div>
+        </div>
+        <div class="field"><label>Description</label><textarea class="input" rows="3" placeholder="What makes this place special?"></textarea></div>
+        <div class="field"><label>Photos</label>
+          <div style="border:2px dashed rgba(14,90,84,0.3); border-radius:var(--radius-md); padding:22px; text-align:center;" class="muted small">📷 Drop images or <strong style="color:var(--teal-700);">browse</strong></div>
+        </div>
+        <button class="btn btn-primary btn-block">Submit for review</button>
+        <p class="small muted text-center mt-2">Admin review usually takes 24–48 h</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="assets/mock.js"></script>
+</body>
+</html>

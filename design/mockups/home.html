@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ceylon Tour Range — Discover Sri Lanka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range</a>
+    <div class="nav-links">
+      <a href="home.html" class="active">Home</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="taxi.html">Taxi</a>
+      <a href="itinerary.html">Trip Planner</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="login.html">Log in</a>
+      <a class="btn btn-primary btn-sm" href="login.html">Sign up</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1800&q=80"
+         alt="Train crossing the jungle in Ella, Sri Lanka"
+         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1800&q=80'" />
+  </div>
+  <div class="container hero-content">
+    <span class="eyebrow" style="color: var(--amber-500);">The island, all in one place</span>
+    <h1>Explore Sri Lanka,<br /><span>your way.</span></h1>
+    <p class="lede">Book taxis, reserve hotels, and build day-by-day itineraries with local guides — one platform for the whole journey.</p>
+
+    <div class="searchbar mt-4 reveal">
+      <div class="cell">
+        <span>Destination</span>
+        <input type="text" placeholder="Where to? e.g. Ella, Galle, Sigiriya" />
+      </div>
+      <div class="cell">
+        <span>Dates</span>
+        <input type="text" placeholder="12 Aug – 21 Aug" />
+      </div>
+      <div class="cell">
+        <span>Type</span>
+        <select><option>Anything</option><option>Attractions</option><option>Hotels</option><option>Taxis</option></select>
+      </div>
+      <button class="btn btn-accent btn-lg">Search</button>
+    </div>
+  </div>
+</header>
+
+<!-- Quick services -->
+<section class="section">
+  <div class="container">
+    <div class="grid-3">
+      <a class="card reveal" href="taxi.html">
+        <div class="card-body flex">
+          <div class="row-icon">🚕</div>
+          <div><h3>Taxi Booking</h3><p class="muted small">Fixed fares, live tracking, trusted drivers.</p></div>
+        </div>
+      </a>
+      <a class="card reveal" data-delay="1" href="hotels.html">
+        <div class="card-body flex">
+          <div class="row-icon">🏨</div>
+          <div><h3>Hotel Stays</h3><p class="muted small">Real-time availability across the island.</p></div>
+        </div>
+      </a>
+      <a class="card reveal" data-delay="2" href="itinerary.html">
+        <div class="card-body flex">
+          <div class="row-icon">🗺️</div>
+          <div><h3>Trip Planner</h3><p class="muted small">Drag-and-drop itineraries, shared with friends.</p></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured destinations -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Featured destinations</span>
+      <h2>Where the island calls</h2>
+      <p class="lede">Hand-picked highlights from our community of local guides.</p>
+    </div>
+    <div class="grid-3">
+      <a class="card reveal" href="attraction-details.html">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=900&q=80" alt="Sigiriya Rock Fortress"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80'" />
+          <span class="badge">Cultural Triangle</span>
+        </div>
+        <div class="card-body">
+          <h3>Sigiriya Rock Fortress</h3>
+          <p class="muted small">Climb the 5th-century citadel above the jungle canopy.</p>
+          <div class="card-meta"><span class="rating">★★★★★ <span class="muted">4.9 (2,140)</span></span><span class="price">From $30</span></div>
+        </div>
+      </a>
+      <a class="card reveal" data-delay="1" href="attraction-details.html">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=900&q=80" alt="Nine Arch Bridge, Ella"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80'" />
+          <span class="badge">Hill Country</span>
+        </div>
+        <div class="card-body">
+          <h3>Ella &amp; Nine Arch Bridge</h3>
+          <p class="muted small">Tea country trains, misty peaks, and waterfall hikes.</p>
+          <div class="card-meta"><span class="rating">★★★★★ <span class="muted">4.8 (1,876)</span></span><span class="price">Free</span></div>
+        </div>
+      </a>
+      <a class="card reveal" data-delay="2" href="attraction-details.html">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=900&q=80" alt="Southern coast of Sri Lanka"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80'" />
+          <span class="badge">South Coast</span>
+        </div>
+        <div class="card-body">
+          <h3>Galle &amp; the South Coast</h3>
+          <p class="muted small">Colonial forts, stilt fishermen, and golden beaches.</p>
+          <div class="card-meta"><span class="rating">★★★★☆ <span class="muted">4.7 (1,203)</span></span><span class="price">From $15</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="text-center mt-4 reveal"><a class="btn btn-ghost" href="attractions.html">Browse all attractions →</a></div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="section" style="background: var(--white);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>Three steps to the perfect trip</h2>
+    </div>
+    <div class="grid-3">
+      <div class="reveal">
+        <div class="row-icon mb-2" style="width:56px;height:56px;font-size:1.5rem;">🔍</div>
+        <h3>1 · Discover</h3>
+        <p class="muted">Search attractions and hotels curated by verified local tour guides.</p>
+      </div>
+      <div class="reveal" data-delay="1">
+        <div class="row-icon mb-2" style="width:56px;height:56px;font-size:1.5rem;">🧩</div>
+        <h3>2 · Plan</h3>
+        <p class="muted">Drag places into a day-by-day itinerary and share it with your travel party.</p>
+      </div>
+      <div class="reveal" data-delay="2">
+        <div class="row-icon mb-2" style="width:56px;height:56px;font-size:1.5rem;">✅</div>
+        <h3>3 · Book</h3>
+        <p class="muted">Reserve hotels and taxis in one checkout — then track everything live.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA banner -->
+<section class="section" style="padding: 0;">
+  <div class="container">
+    <div class="reveal" style="border-radius: var(--radius-lg); overflow:hidden; position:relative; margin: 88px 0;">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80" alt="Beach at sunset" style="width:100%;height:340px;object-fit:cover;" />
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(4,33,31,0.82), rgba(4,33,31,0.2));display:flex;align-items:center;">
+        <div style="padding: 0 56px; color:#fff; max-width: 560px;">
+          <h2 style="color:#fff;">Local guides earn by sharing hidden gems</h2>
+          <p class="lede" style="color:rgba(255,255,255,0.85);">Add places, manage listings, and track engagement in the Tour Guide Portal.</p>
+          <a class="btn btn-accent mt-3" href="guide-portal.html">Become a guide</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Testimonials</span>
+      <h2>Travellers trust the Range</h2>
+    </div>
+    <div class="grid-3">
+      <div class="panel reveal">
+        <span class="rating">★★★★★</span>
+        <p class="mt-2">“Planned our whole honeymoon in one evening. The taxi tracking made airport pickup completely stress-free.”</p>
+        <div class="flex mt-3"><div class="avatar">EM</div><div><strong>Emma M.</strong><div class="muted small">United Kingdom</div></div></div>
+      </div>
+      <div class="panel reveal" data-delay="1">
+        <span class="rating">★★★★★</span>
+        <p class="mt-2">“The itinerary builder is brilliant — my guide added two spots I'd never have found on my own.”</p>
+        <div class="flex mt-3"><div class="avatar">RS</div><div><strong>Raj S.</strong><div class="muted small">India</div></div></div>
+      </div>
+      <div class="panel reveal" data-delay="2">
+        <span class="rating">★★★★☆</span>
+        <p class="mt-2">“Booked three hotels and every transfer through one dashboard. This is how island travel should work.”</p>
+        <div class="flex mt-3"><div class="avatar">LT</div><div><strong>Lena T.</strong><div class="muted small">Germany</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" style="color:#fff;" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range</a>
+        <p class="small mt-2" style="max-width: 300px;">One platform for taxis, hotels, attractions, and itineraries across Sri Lanka.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="attractions.html">Attractions</a><a href="hotels.html">Hotels</a><a href="taxi.html">Taxi booking</a><a href="itinerary.html">Trip planner</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About us</a><a href="about.html">Contact</a><a href="guide-portal.html">Guide portal</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="faq.html">Help center</a><a href="legal.html">Terms of Service</a><a href="legal.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ceylon Tour Range. All rights reserved.</span>
+      <span>Colombo · Kandy · Galle</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/mock.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Itinerary Builder — Ceylon Tour Range</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range</a>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="taxi.html">Taxi</a>
+      <a href="itinerary.html" class="active">Trip Planner</a>
+    </div>
+    <div class="nav-cta"><div class="avatar">SC</div></div>
+  </div>
+</nav>
+
+<!-- Trip header -->
+<section style="background: var(--white); border-bottom:1px solid var(--sand-100); padding: 24px 0;">
+  <div class="container flex-between" style="flex-wrap:wrap;">
+    <div>
+      <h2 style="font-size:1.6rem;">Honeymoon Loop · 8 days 🌴</h2>
+      <p class="muted small">12 – 19 Aug 2026 · Colombo → Kandy → Ella → Galle</p>
+    </div>
+    <div class="flex">
+      <div class="flex" style="gap:-8px;">
+        <div class="avatar">SC</div>
+        <div class="avatar" style="margin-left:-12px; background:linear-gradient(135deg, var(--teal-700), var(--teal-500));">EM</div>
+        <div class="avatar" style="margin-left:-12px; background:var(--ink-400);">+1</div>
+      </div>
+      <button class="btn btn-ghost btn-sm">🔗 Share</button>
+      <button class="btn btn-ghost btn-sm">⬇ Export PDF</button>
+      <button class="btn btn-primary btn-sm">💾 Save</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 32px;">
+  <div class="container" style="display:grid; grid-template-columns: 1fr 1fr 340px; gap:24px; align-items:start;">
+    <!-- Day planner -->
+    <div>
+      <div class="tabs">
+        <button class="tab">Day 2</button>
+        <button class="tab active">Day 3</button>
+        <button class="tab">Day 4</button>
+        <button class="tab">Day 5</button>
+      </div>
+      <div class="panel">
+        <div class="flex-between mb-3"><h3>Day 3 · Thu 14 Aug — Ella</h3><span class="badge badge-teal">3 stops</span></div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="flex-between"><strong>06:00 · Airport transfer</strong><span class="muted small">⠿ drag</span></div>
+            <p class="muted small">CMB → Ella Ridge Resort · Sedan booked ($78)</p>
+            <a class="small" style="color:var(--teal-700); font-weight:700;" href="taxi.html">View booking →</a>
+          </div>
+          <div class="timeline-item amber">
+            <div class="flex-between"><strong>14:00 · Nine Arch Bridge</strong><span class="muted small">⠿ drag</span></div>
+            <p class="muted small">Catch the 15:15 train crossing · 20 min walk from town</p>
+          </div>
+          <div class="timeline-item">
+            <div class="flex-between"><strong>17:30 · Little Adam's Peak sunset</strong><span class="muted small">⠿ drag</span></div>
+            <p class="muted small">Easy 45-min hike · Bring a headlamp for the way down</p>
+          </div>
+        </div>
+        <button class="btn btn-ghost btn-block mt-2" style="border-style:dashed;">+ Add a stop</button>
+      </div>
+
+      <div class="panel mt-3" style="border: 2px dashed rgba(14,90,84,0.3); background:transparent; box-shadow:none; text-align:center; padding:22px;">
+        <span class="muted small">Drag attractions here to add them to <strong>Day 3</strong></span>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map reveal is-visible" style="min-height: 560px; position:sticky; top:96px;">
+      <div class="pin teal" style="top:16%; left:22%;"></div>
+      <div class="pin" style="top:38%; left:48%;"></div>
+      <div class="pin teal" style="top:52%; left:68%;"></div>
+      <div class="pin" style="top:78%; left:34%;"></div>
+      <div class="route" style="top:24%; left:25%; width:30%; transform:rotate(28deg); transform-origin:left;"></div>
+      <div class="route" style="top:44%; left:50%; width:24%; transform:rotate(18deg); transform-origin:left;"></div>
+      <div class="panel" style="position:absolute; top:14px; left:14px; padding:10px 16px;">
+        <span class="small"><strong>Route:</strong> 412 km · 4 towns</span>
+      </div>
+    </div>
+
+    <!-- Suggestions -->
+    <div>
+      <h3 class="mb-2">Nearby suggestions</h3>
+      <div class="row-list">
+        <div class="row-item reveal is-visible">
+          <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=200&q=80" alt="Ella train ride" style="width:64px; height:64px; border-radius:12px; object-fit:cover;"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=200&q=80'" />
+          <div style="flex:1;"><strong class="small">Kandy–Ella scenic train</strong><div class="muted small">★ 4.9 · 6.5 h</div></div>
+          <button class="btn btn-primary btn-sm">+</button>
+        </div>
+        <div class="row-item reveal is-visible">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=200&q=80" alt="Ravana Falls" style="width:64px; height:64px; border-radius:12px; object-fit:cover;" />
+          <div style="flex:1;"><strong class="small">Ravana Falls</strong><div class="muted small">★ 4.5 · 1 h</div></div>
+          <button class="btn btn-primary btn-sm">+</button>
+        </div>
+        <div class="row-item reveal is-visible">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=200&q=80" alt="Tea factory tour" style="width:64px; height:64px; border-radius:12px; object-fit:cover;" />
+          <div style="flex:1;"><strong class="small">Halpewatte Tea Factory</strong><div class="muted small">★ 4.7 · 2 h</div></div>
+          <button class="btn btn-primary btn-sm">+</button>
+        </div>
+      </div>
+
+      <div class="panel mt-3" style="background: var(--teal-950); color: rgba(255,255,255,0.85);">
+        <strong style="color:#fff;">💡 Guide tip</strong>
+        <p class="small mt-1">Trains from Kandy sell out in season — reserve 2nd-class window seats at least 3 days ahead.</p>
+        <p class="small mt-1" style="color:var(--amber-500); font-weight:700;">— Nuwan, verified guide</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none; padding-top:0;">
+    <span>© 2026 Ceylon Tour Range</span>
+    <span><a href="faq.html">Help</a></span>
+  </div>
+</footer>
+
+<script src="assets/mock.js"></script>
+</body>
+</html>
