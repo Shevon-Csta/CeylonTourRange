@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Taxi Booking — Ceylon Tour Range</title>
+<title>Taxi Booking — Ceylon Tour Range by Nonis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/styles.css" />
@@ -12,7 +12,7 @@
 
 <nav class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range</a>
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
     <div class="nav-links">
       <a href="home.html">Home</a>
       <a href="attractions.html">Attractions</a>
@@ -20,12 +20,13 @@
       <a href="taxi.html" class="active">Taxi</a>
       <a href="itinerary.html">Trip Planner</a>
     </div>
+    <button class="nav-burger" aria-label="Open menu">☰</button>
     <div class="nav-cta"><div class="avatar">SC</div></div>
   </div>
 </nav>
 
 <section class="section" style="padding-top: 40px;">
-  <div class="container" style="display:grid; grid-template-columns: 420px 1fr; gap:26px; align-items:start;">
+  <div class="container layout-aside-main">
     <!-- Booking panel -->
     <div class="panel reveal is-visible">
       <h2 style="font-size:1.6rem;">Book a ride</h2>
@@ -79,7 +80,7 @@
         <div class="pin" style="top:62%; left:74%;"></div>
         <div class="route" style="top:31%; left:21%; width:55%; transform: rotate(24deg); transform-origin:left;"></div>
         <!-- Driver card overlay -->
-        <div class="panel" style="position:absolute; top:16px; right:16px; width:300px; padding:18px;">
+        <div class="panel" style="position:absolute; top:16px; right:16px; width:min(300px, calc(100% - 32px)); padding:18px;">
           <div class="flex">
             <div class="avatar" style="background: linear-gradient(135deg, var(--teal-700), var(--teal-500));">KD</div>
             <div style="flex:1;"><strong>Kasun D.</strong><div class="muted small">Toyota Prius · CAB-4471</div></div>
@@ -114,7 +115,7 @@
 
 <footer class="footer">
   <div class="container footer-bottom" style="border:none; padding-top:0;">
-    <span>© 2026 Ceylon Tour Range</span>
+    <span>© 2026 Ceylon Tour Range by Nonis</span>
     <span><a href="faq.html">Help</a></span>
   </div>
 </footer>

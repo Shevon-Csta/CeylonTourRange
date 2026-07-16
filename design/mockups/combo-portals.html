@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="capture">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboards & Portals (screens 10–12) — Ceylon Tour Range by Nonis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+
+<div style="background:#04211F; color:#fff; padding:20px 40px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;">▼ 10 · User Dashboard</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="taxi.html">Taxi</a>
+      <a href="itinerary.html">Trip Planner</a>
+    </div>
+    <button class="nav-burger" aria-label="Open menu">☰</button>
+    <div class="nav-cta"><span style="position:relative;">🔔<span style="position:absolute;top:-4px;right:-6px;width:16px;height:16px;border-radius:50%;background:var(--sunset);color:#fff;font-size:0.6rem;font-weight:800;display:grid;place-items:center;">3</span></span><div class="avatar">SC</div></div>
+  </div>
+</nav>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <span class="side-title">My account</span>
+    <a href="dashboard.html" class="active">🏠 Overview</a>
+    <a href="dashboard.html">🧾 Bookings</a>
+    <a href="itinerary.html">🗺️ My itineraries</a>
+    <a href="dashboard.html">❤️ Saved places</a>
+    <a href="dashboard.html">🔔 Notifications</a>
+    <span class="side-title">Settings</span>
+    <a href="dashboard.html">👤 Profile</a>
+    <a href="dashboard.html">💳 Payment methods</a>
+    <a href="login.html">↩ Log out</a>
+  </aside>
+
+  <main class="app-main">
+    <div class="app-header">
+      <div><h2 style="font-size:1.7rem;">Ayubowan, Shevon 👋</h2><p class="muted small">Your trip to Ella starts in <strong>6 days</strong>.</p></div>
+      <a class="btn btn-primary" href="itinerary.html">+ New itinerary</a>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat reveal is-visible"><div class="stat-label">Upcoming bookings</div><div class="stat-value">4</div><span class="stat-delta up">2 hotels · 2 taxis</span></div>
+      <div class="stat reveal is-visible"><div class="stat-label">Active itinerary</div><div class="stat-value">8 days</div><span class="stat-delta">Honeymoon Loop</span></div>
+      <div class="stat reveal is-visible"><div class="stat-label">Saved places</div><div class="stat-value">17</div><span class="stat-delta up">+3 this week</span></div>
+      <div class="stat reveal is-visible"><div class="stat-label">Reviews written</div><div class="stat-value">6</div><span class="stat-delta">★ 4.7 avg given</span></div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active">Upcoming</button>
+      <button class="tab">Past</button>
+      <button class="tab">Cancelled</button>
+    </div>
+
+    <div class="table-wrap mb-3">
+      <table>
+        <thead><tr><th>Booking</th><th>Type</th><th>Date</th><th>Amount</th><th>Status</th><th></th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ella Ridge Resort &amp; Spa</strong><div class="muted small">Deluxe Valley View · 3 nights</div></td><td>🏨 Hotel</td><td>14–17 Aug</td><td>$289</td><td><span class="badge badge-green">Confirmed</span></td><td><a class="btn btn-ghost btn-sm" href="hotel-details.html">View</a></td></tr>
+          <tr><td><strong>CMB Airport → Ella</strong><div class="muted small">Sedan · Kasun D.</div></td><td>🚕 Taxi</td><td>14 Aug, 06:00</td><td>$78</td><td><span class="badge badge-green">Confirmed</span></td><td><a class="btn btn-ghost btn-sm" href="taxi.html">Track</a></td></tr>
+          <tr><td><strong>Koggala Lagoon Villa</strong><div class="muted small">Beachfront room · 2 nights</div></td><td>🏨 Hotel</td><td>17–19 Aug</td><td>$248</td><td><span class="badge badge-amber">Pending payment</span></td><td><a class="btn btn-ghost btn-sm" href="hotel-booking.html">Pay</a></td></tr>
+          <tr><td><strong>Ella → Galle</strong><div class="muted small">Van · driver TBD</div></td><td>🚕 Taxi</td><td>17 Aug, 09:00</td><td>$96</td><td><span class="badge badge-teal">Scheduled</span></td><td><a class="btn btn-ghost btn-sm" href="taxi.html">Edit</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="flex-between mb-2"><h3>Saved itineraries</h3><a class="small" style="color:var(--teal-700);font-weight:700;" href="itinerary.html">See all →</a></div>
+        <div class="row-list">
+          <a class="row-item" href="itinerary.html"><div class="row-icon">🌴</div><div style="flex:1;"><strong class="small">Honeymoon Loop</strong><div class="muted small">8 days · 12 stops · shared with 2</div></div><span class="badge badge-teal">Active</span></a>
+          <a class="row-item" href="itinerary.html"><div class="row-icon">🐘</div><div style="flex:1;"><strong class="small">Wildlife Weekend</strong><div class="muted small">3 days · Yala &amp; Udawalawe</div></div><span class="badge badge-amber">Draft</span></a>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="flex-between mb-2"><h3>Notifications</h3><span class="badge badge-red">3 new</span></div>
+        <div class="row-list">
+          <div class="row-item"><div class="row-icon">💳</div><div><strong class="small">Payment due for Koggala Lagoon Villa</strong><div class="muted small">Complete by 10 Aug to hold your room · 2 h ago</div></div></div>
+          <div class="row-item"><div class="row-icon">🚕</div><div><strong class="small">Driver assigned: Kasun D. (★ 4.9)</strong><div class="muted small">Airport pickup 14 Aug · yesterday</div></div></div>
+          <div class="row-item"><div class="row-icon">🗺️</div><div><strong class="small">Emma added 2 stops to Honeymoon Loop</strong><div class="muted small">Ravana Falls, tea factory · 2 days ago</div></div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div style="background:#04211F; color:#fff; padding:20px 40px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;">▼ 11 · Tour Guide Portal</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small> <span class="badge badge-amber">Guide Portal</span></a>
+    <div class="nav-cta" style="margin-left:auto;"><div class="avatar" style="background:linear-gradient(135deg, var(--teal-700), var(--teal-500));">NG</div></div>
+  </div>
+</nav>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <span class="side-title">Guide tools</span>
+    <a href="guide-portal.html" class="active">📊 Overview</a>
+    <a href="guide-portal.html">📍 My places</a>
+    <a href="guide-portal.html">🏨 My hotels</a>
+    <a href="guide-portal.html">🎉 Events</a>
+    <a href="guide-portal.html">⭐ Reviews</a>
+    <span class="side-title">Account</span>
+    <a href="guide-portal.html">👤 Guide profile</a>
+    <a href="login.html">↩ Log out</a>
+  </aside>
+
+  <main class="app-main">
+    <div class="app-header">
+      <div><h2 style="font-size:1.7rem;">Guide overview</h2><p class="muted small">Nuwan Gamage · Verified guide since 2024 · ★ 4.9</p></div>
+      <button class="btn btn-accent">+ Add new place</button>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-label">Places listed</div><div class="stat-value">23</div><span class="stat-delta up">▲ 2 this month</span></div>
+      <div class="stat"><div class="stat-label">Total visits</div><div class="stat-value">18.4k</div><span class="stat-delta up">▲ 12% vs July</span></div>
+      <div class="stat"><div class="stat-label">Avg. rating</div><div class="stat-value">4.8</div><span class="stat-delta">across 1,240 reviews</span></div>
+      <div class="stat"><div class="stat-label">Pending approval</div><div class="stat-value">2</div><span class="stat-delta down">1 needs edits</span></div>
+    </div>
+
+    <div class="layout-2col-980">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Place</th><th>Category</th><th>Visits</th><th>Rating</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Secret Ella Viewpoint</strong></td><td>Hiking</td><td>3,120</td><td>★ 4.9</td><td><span class="badge badge-green">Live</span></td></tr>
+            <tr><td><strong>Halpewatte Tea Factory</strong></td><td>Culture</td><td>2,860</td><td>★ 4.7</td><td><span class="badge badge-green">Live</span></td></tr>
+            <tr><td><strong>Idalgashinna Rail Walk</strong></td><td>Hiking</td><td>—</td><td>—</td><td><span class="badge badge-amber">In review</span></td></tr>
+            <tr><td><strong>Nil Diya Pokuna Cave</strong></td><td>Adventure</td><td>—</td><td>—</td><td><span class="badge badge-red">Edits requested</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add place form -->
+      <div class="panel">
+        <h3 class="mb-2">Quick add place</h3>
+        <div class="field"><label>Place name</label><input class="input" placeholder="e.g. Diyaluma Falls upper pools" /></div>
+        <div class="form-row">
+          <div class="field"><label>Category</label><select class="input"><option>Hiking</option><option>Heritage</option><option>Beach</option><option>Wildlife</option></select></div>
+          <div class="field"><label>District</label><select class="input"><option>Badulla</option><option>Kandy</option><option>Galle</option></select></div>
+        </div>
+        <div class="field"><label>Description</label><textarea class="input" rows="3" placeholder="What makes this place special?"></textarea></div>
+        <div class="field"><label>Photos</label>
+          <div style="border:2px dashed rgba(14,90,84,0.3); border-radius:var(--radius-md); padding:22px; text-align:center;" class="muted small">📷 Drop images or <strong style="color:var(--teal-700);">browse</strong></div>
+        </div>
+        <button class="btn btn-primary btn-block">Submit for review</button>
+        <p class="small muted text-center mt-2">Admin review usually takes 24–48 h</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div style="background:#04211F; color:#fff; padding:20px 40px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;">▼ 12 · Admin Dashboard</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small> <span class="badge badge-red">Admin</span></a>
+    <div class="nav-cta" style="margin-left:auto;"><div class="avatar" style="background:var(--teal-950);">AD</div></div>
+  </div>
+</nav>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <span class="side-title">Manage</span>
+    <a href="admin.html" class="active">📈 Analytics</a>
+    <a href="admin.html">👥 Users</a>
+    <a href="admin.html">🧾 Bookings</a>
+    <a href="admin.html">📍 Content moderation</a>
+    <a href="admin.html">🛟 Support center</a>
+    <span class="side-title">System</span>
+    <a href="admin.html">⚙️ Settings</a>
+    <a href="login.html">↩ Log out</a>
+  </aside>
+
+  <main class="app-main">
+    <div class="app-header">
+      <div><h2 style="font-size:1.7rem;">Platform analytics</h2><p class="muted small">Last 30 days · updated 5 min ago</p></div>
+      <div class="flex"><select class="input" style="width:auto; padding:9px 14px;"><option>Last 30 days</option><option>Quarter</option></select><button class="btn btn-ghost btn-sm">⬇ Export</button></div>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-label">Revenue</div><div class="stat-value">$48.2k</div><span class="stat-delta up">▲ 18% MoM</span></div>
+      <div class="stat"><div class="stat-label">Bookings</div><div class="stat-value">1,312</div><span class="stat-delta up">▲ 9%</span></div>
+      <div class="stat"><div class="stat-label">Active users</div><div class="stat-value">9,807</div><span class="stat-delta up">▲ 22%</span></div>
+      <div class="stat"><div class="stat-label">Open tickets</div><div class="stat-value">14</div><span class="stat-delta down">▼ 5 resolved today</span></div>
+    </div>
+
+    <!-- Fake bar chart -->
+    <div class="panel mb-3">
+      <div class="flex-between mb-2"><h3>Bookings by service</h3><div class="flex small"><span class="badge badge-teal">Hotels</span><span class="badge badge-amber">Taxis</span></div></div>
+      <div style="display:flex; align-items:flex-end; gap:18px; height:180px; padding-top:10px;">
+        <div style="flex:1; display:flex; gap:5px; align-items:flex-end;"><div style="flex:1;height:52%;background:var(--teal-500);border-radius:6px 6px 0 0;"></div><div style="flex:1;height:38%;background:var(--amber-500);border-radius:6px 6px 0 0;"></div></div>
+        <div style="flex:1; display:flex; gap:5px; align-items:flex-end;"><div style="flex:1;height:64%;background:var(--teal-500);border-radius:6px 6px 0 0;"></div><div style="flex:1;height:46%;background:var(--amber-500);border-radius:6px 6px 0 0;"></div></div>
+        <div style="flex:1; display:flex; gap:5px; align-items:flex-end;"><div style="flex:1;height:58%;background:var(--teal-500);border-radius:6px 6px 0 0;"></div><div style="flex:1;height:52%;background:var(--amber-500);border-radius:6px 6px 0 0;"></div></div>
+        <div style="flex:1; display:flex; gap:5px; align-items:flex-end;"><div style="flex:1;height:78%;background:var(--teal-500);border-radius:6px 6px 0 0;"></div><div style="flex:1;height:60%;background:var(--amber-500);border-radius:6px 6px 0 0;"></div></div>
+        <div style="flex:1; display:flex; gap:5px; align-items:flex-end;"><div style="flex:1;height:90%;background:var(--teal-500);border-radius:6px 6px 0 0;"></div><div style="flex:1;height:66%;background:var(--amber-500);border-radius:6px 6px 0 0;"></div></div>
+        <div style="flex:1; display:flex; gap:5px; align-items:flex-end;"><div style="flex:1;height:100%;background:var(--teal-700);border-radius:6px 6px 0 0;"></div><div style="flex:1;height:74%;background:var(--sunset);border-radius:6px 6px 0 0;"></div></div>
+      </div>
+      <div class="flex-between small muted mt-1"><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span></div>
+    </div>
+
+    <div class="layout-2col-980">
+      <!-- Moderation queue -->
+      <div class="panel">
+        <div class="flex-between mb-2"><h3>Moderation queue</h3><span class="badge badge-amber">5 pending</span></div>
+        <div class="row-list">
+          <div class="row-item">
+            <div class="row-icon">📍</div>
+            <div style="flex:1;"><strong class="small">Idalgashinna Rail Walk</strong><div class="muted small">New place · by Nuwan G. · 2 photos</div></div>
+            <button class="btn btn-primary btn-sm">Approve</button>
+            <button class="btn btn-ghost btn-sm">Reject</button>
+          </div>
+          <div class="row-item">
+            <div class="row-icon">🏨</div>
+            <div style="flex:1;"><strong class="small">Mirissa Bay Cabanas</strong><div class="muted small">New hotel · by Sithara W. · 6 photos</div></div>
+            <button class="btn btn-primary btn-sm">Approve</button>
+            <button class="btn btn-ghost btn-sm">Reject</button>
+          </div>
+          <div class="row-item">
+            <div class="row-icon">⭐</div>
+            <div style="flex:1;"><strong class="small">Reported review on Kandy Lake Hotel</strong><div class="muted small">Flagged: spam · 3 reports</div></div>
+            <button class="btn btn-primary btn-sm">Keep</button>
+            <button class="btn btn-ghost btn-sm">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent users -->
+      <div class="panel">
+        <div class="flex-between mb-2"><h3>Newest users</h3><a class="small" style="color:var(--teal-700);font-weight:700;" href="admin.html">Manage all →</a></div>
+        <div class="row-list">
+          <div class="row-item"><div class="avatar">EM</div><div style="flex:1;"><strong class="small">Emma Miller</strong><div class="muted small">Traveller · UK</div></div><span class="badge badge-teal">Active</span></div>
+          <div class="row-item"><div class="avatar" style="background:linear-gradient(135deg, var(--teal-700), var(--teal-500));">SW</div><div style="flex:1;"><strong class="small">Sithara W.</strong><div class="muted small">Guide · pending verification</div></div><span class="badge badge-amber">Review</span></div>
+          <div class="row-item"><div class="avatar" style="background:var(--ink-400);">KD</div><div style="flex:1;"><strong class="small">Kasun D.</strong><div class="muted small">Driver · Colombo</div></div><span class="badge badge-teal">Active</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

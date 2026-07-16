@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" class="capture">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Attractions (screens 03–04) — Ceylon Tour Range by Nonis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<style>
 /* ==========================================================================
    Ceylon Tour Range — Design System (Tropical Modern)
    Mockup stylesheet shared by all screens in design/mockups/
@@ -80,11 +89,8 @@ h3 { font-size: 1.25rem; }
 /* --------------------------------------------------------------------------
    Reveal-on-scroll (activated by mock.js IntersectionObserver)
    -------------------------------------------------------------------------- */
-/* Static by default: all content fully visible for clean screenshots.
-   Add ?animate=1 to a page URL to re-enable the scroll-reveal effect. */
-.reveal { opacity: 1; transform: none; }
-html.animate .reveal { opacity: 0; transform: translateY(26px); transition: opacity 700ms var(--ease), transform 700ms var(--ease); }
-html.animate .reveal.is-visible { opacity: 1; transform: none; }
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity 700ms var(--ease), transform 700ms var(--ease); }
+.reveal.is-visible { opacity: 1; transform: none; }
 .reveal[data-delay="1"] { transition-delay: 90ms; }
 .reveal[data-delay="2"] { transition-delay: 180ms; }
 .reveal[data-delay="3"] { transition-delay: 270ms; }
@@ -478,3 +484,260 @@ tbody tr:hover { background: rgba(221, 240, 238, 0.35); }
   h2 { font-size: 1.7rem; }
   .btn-lg { padding: 14px 24px; }
 }
+
+</style>
+</head>
+<body>
+
+
+<div style="background:#04211F; color:#fff; padding:20px 40px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;">▼ 03 · Attractions Directory</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="attractions.html" class="active">Attractions</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="taxi.html">Taxi</a>
+      <a href="itinerary.html">Trip Planner</a>
+    </div>
+    <button class="nav-burger" aria-label="Open menu">☰</button>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="login.html">Log in</a>
+      <div class="avatar">SC</div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color: var(--amber-500);">Attractions directory</span>
+    <h1 style="color:#fff;">Find your next stop</h1>
+    <p class="lede">312 places across the island, added and verified by local guides.</p>
+  </div>
+</header>
+
+<section class="section" style="padding-top: 40px;">
+  <div class="container">
+    <!-- Filters -->
+    <div class="flex-between mb-3" style="flex-wrap:wrap;">
+      <div class="flex" style="flex-wrap:wrap;">
+        <span class="chip active" data-toggle>All</span>
+        <span class="chip" data-toggle>🏛️ Heritage</span>
+        <span class="chip" data-toggle>🏖️ Beaches</span>
+        <span class="chip" data-toggle>⛰️ Hiking</span>
+        <span class="chip" data-toggle>🐘 Wildlife</span>
+        <span class="chip" data-toggle>🍛 Food</span>
+      </div>
+      <div class="flex">
+        <div class="tabs" style="margin:0;">
+          <button class="tab active">List</button>
+          <button class="tab">Map</button>
+        </div>
+        <a class="btn btn-accent btn-sm" href="guide-portal.html">+ Add new place</a>
+      </div>
+    </div>
+
+    <div class="layout-list-map">
+      <!-- Cards -->
+      <div class="grid-2">
+        <a class="card reveal" href="attraction-details.html">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=800&q=80" alt="Sigiriya"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80'" />
+            <span class="badge">Heritage</span>
+          </div>
+          <div class="card-body">
+            <h3>Sigiriya Rock Fortress</h3>
+            <p class="muted small">Matale District · UNESCO site</p>
+            <div class="card-meta"><span class="rating">★★★★★ <span class="muted">4.9</span></span><span class="price">$30 <small>/ entry</small></span></div>
+          </div>
+        </a>
+        <a class="card reveal" data-delay="1" href="attraction-details.html">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Nine Arch Bridge"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80'" />
+            <span class="badge">Hiking</span>
+          </div>
+          <div class="card-body">
+            <h3>Nine Arch Bridge</h3>
+            <p class="muted small">Ella · Iconic viewpoint</p>
+            <div class="card-meta"><span class="rating">★★★★★ <span class="muted">4.8</span></span><span class="price">Free</span></div>
+          </div>
+        </a>
+        <a class="card reveal" href="attraction-details.html">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=800&q=80" alt="Stilt fishermen"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80'" />
+            <span class="badge">Beaches</span>
+          </div>
+          <div class="card-body">
+            <h3>Koggala Stilt Fishermen</h3>
+            <p class="muted small">Southern Province · Cultural</p>
+            <div class="card-meta"><span class="rating">★★★★☆ <span class="muted">4.6</span></span><span class="price">Free</span></div>
+          </div>
+        </a>
+        <a class="card reveal" data-delay="1" href="attraction-details.html">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Mirissa beach" />
+            <span class="badge">Beaches</span>
+          </div>
+          <div class="card-body">
+            <h3>Mirissa Beach &amp; Whale Watching</h3>
+            <p class="muted small">Matara District · Nov–Apr season</p>
+            <div class="card-meta"><span class="rating">★★★★★ <span class="muted">4.8</span></span><span class="price">$45 <small>/ tour</small></span></div>
+          </div>
+        </a>
+        <a class="card reveal" href="attraction-details.html">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80" alt="Horton Plains" />
+            <span class="badge">Hiking</span>
+          </div>
+          <div class="card-body">
+            <h3>Horton Plains &amp; World's End</h3>
+            <p class="muted small">Nuwara Eliya · National park</p>
+            <div class="card-meta"><span class="rating">★★★★☆ <span class="muted">4.7</span></span><span class="price">$25 <small>/ entry</small></span></div>
+          </div>
+        </a>
+        <a class="card reveal" data-delay="1" href="attraction-details.html">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" alt="Kandy"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80'" />
+            <span class="badge">Heritage</span>
+          </div>
+          <div class="card-body">
+            <h3>Temple of the Sacred Tooth</h3>
+            <p class="muted small">Kandy · Buddhist temple</p>
+            <div class="card-meta"><span class="rating">★★★★★ <span class="muted">4.9</span></span><span class="price">$10 <small>/ entry</small></span></div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Map panel -->
+      <div class="map reveal map-tall sticky-aside">
+        <div class="pin teal" style="top:18%; left:52%;"></div>
+        <div class="pin" style="top:44%; left:63%;"></div>
+        <div class="pin teal" style="top:70%; left:38%;"></div>
+        <div class="pin" style="top:80%; left:55%;"></div>
+        <div class="pin teal" style="top:55%; left:30%;"></div>
+        <div class="panel" style="position:absolute; bottom:16px; left:16px; right:16px; padding:16px 18px;">
+          <div class="flex-between">
+            <div><strong>Sigiriya Rock Fortress</strong><div class="muted small">★ 4.9 · Heritage</div></div>
+            <a class="btn btn-primary btn-sm" href="attraction-details.html">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none; padding-top:0;">
+    <span>© 2026 Ceylon Tour Range by Nonis</span>
+    <span><a href="faq.html">Help</a></span>
+  </div>
+</footer>
+
+<div style="background:#04211F; color:#fff; padding:20px 40px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;">▼ 04 · Attraction Details</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="attractions.html" class="active">Attractions</a>
+      <a href="hotels.html">Hotels</a>
+      <a href="taxi.html">Taxi</a>
+      <a href="itinerary.html">Trip Planner</a>
+    </div>
+    <button class="nav-burger" aria-label="Open menu">☰</button>
+    <div class="nav-cta"><div class="avatar">SC</div></div>
+  </div>
+</nav>
+
+<!-- Gallery -->
+<section class="section" style="padding: 36px 0 0;">
+  <div class="container">
+    <p class="small muted mb-2"><a href="attractions.html">Attractions</a> / Cultural Triangle / <strong>Sigiriya Rock Fortress</strong></p>
+    <div class="gallery-duo">
+      <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=1400&q=80" alt="Sigiriya main view" style="height:440px; width:100%; object-fit:cover;"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=80'" />
+      <div style="display:grid; grid-template-rows: 1fr 1fr; gap:14px;">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=700&q=80" alt="View from summit" style="height:100%; width:100%; object-fit:cover;" />
+        <div style="position:relative;">
+          <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=700&q=80" alt="Surrounding jungle" style="height:100%; width:100%; object-fit:cover;"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80'" />
+          <div style="position:absolute; inset:0; background:rgba(4,33,31,0.55); display:grid; place-items:center; color:#fff; font-weight:800;">+ 24 photos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 40px;">
+  <div class="container layout-main-aside">
+    <div>
+      <div class="flex mb-2"><span class="badge badge-teal">Heritage</span><span class="badge badge-amber">UNESCO World Heritage</span></div>
+      <h1 style="font-size: clamp(2rem, 4vw, 3rem);">Sigiriya Rock Fortress</h1>
+      <p class="flex mt-1"><span class="rating">★★★★★</span> <strong>4.9</strong> <span class="muted">(2,140 reviews) · Matale District, Central Province</span></p>
+
+      <div class="divider"></div>
+      <h3>About this place</h3>
+      <p class="muted mt-1">Rising 200 metres above the jungle, Sigiriya is a 5th-century royal citadel built by King Kashyapa. Climb past the famous frescoes and the Lion's Paw terrace to panoramic views over the Cultural Triangle. Allow 3–4 hours; early morning visits avoid heat and crowds.</p>
+
+      <div class="grid-4 mt-3">
+        <div class="panel text-center" style="padding:16px;"><div style="font-size:1.4rem;">⏱️</div><strong>3–4 hrs</strong><div class="muted small">Duration</div></div>
+        <div class="panel text-center" style="padding:16px;"><div style="font-size:1.4rem;">🥾</div><strong>1,200</strong><div class="muted small">Steps</div></div>
+        <div class="panel text-center" style="padding:16px;"><div style="font-size:1.4rem;">🌅</div><strong>6:30 AM</strong><div class="muted small">Best start</div></div>
+        <div class="panel text-center" style="padding:16px;"><div style="font-size:1.4rem;">🎫</div><strong>$30</strong><div class="muted small">Entry</div></div>
+      </div>
+
+      <div class="divider"></div>
+      <h3>Location</h3>
+      <div class="map mt-2" style="min-height:280px;">
+        <div class="pin" style="top:45%; left:50%;"></div>
+      </div>
+
+      <div class="divider"></div>
+      <div class="flex-between"><h3>Reviews</h3><button class="btn btn-ghost btn-sm">Write a review</button></div>
+      <div class="row-list mt-2">
+        <div class="row-item reveal">
+          <div class="avatar">JP</div>
+          <div style="flex:1;">
+            <div class="flex-between"><strong>João P.</strong><span class="rating">★★★★★</span></div>
+            <p class="small muted">Sunrise climb was unforgettable. Book the taxi through the app the night before — driver was waiting at 5:40 sharp.</p>
+          </div>
+        </div>
+        <div class="row-item reveal" data-delay="1">
+          <div class="avatar">AK</div>
+          <div style="flex:1;">
+            <div class="flex-between"><strong>Ayesha K.</strong><span class="rating">★★★★☆</span></div>
+            <p class="small muted">Steep but manageable. The frescoes alone are worth the ticket. Bring water!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky booking card -->
+    <aside class="panel reveal sticky-aside">
+      <div class="flex-between mb-2"><span class="price" style="font-size:1.5rem;">$30 <small>/ person</small></span><span class="badge badge-green">Open today</span></div>
+      <div class="field"><label>Visit date</label><input class="input" type="text" placeholder="14 Aug 2026" /></div>
+      <div class="field"><label>Travellers</label><select class="input"><option>2 adults</option><option>1 adult</option><option>Family (2+2)</option></select></div>
+      <a class="btn btn-accent btn-block btn-lg mb-2" href="itinerary.html">+ Add to itinerary</a>
+      <a class="btn btn-ghost btn-block" href="taxi.html">🚕 Book a taxi here</a>
+      <div class="divider"></div>
+      <p class="small muted">Added by <strong>Nuwan · Verified Guide</strong> · Updated 2 weeks ago</p>
+    </aside>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none; padding-top:0;">
+    <span>© 2026 Ceylon Tour Range by Nonis</span>
+    <span><a href="faq.html">Help</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

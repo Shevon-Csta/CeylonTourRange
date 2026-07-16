@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ella Ridge Resort & Spa — Ceylon Tour Range</title>
+<title>Ella Ridge Resort & Spa — Ceylon Tour Range by Nonis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/styles.css" />
@@ -12,7 +12,7 @@
 
 <nav class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range</a>
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
     <div class="nav-links">
       <a href="home.html">Home</a>
       <a href="attractions.html">Attractions</a>
@@ -20,6 +20,7 @@
       <a href="taxi.html">Taxi</a>
       <a href="itinerary.html">Trip Planner</a>
     </div>
+    <button class="nav-burger" aria-label="Open menu">☰</button>
     <div class="nav-cta"><div class="avatar">SC</div></div>
   </div>
 </nav>
@@ -27,7 +28,7 @@
 <section class="section" style="padding: 36px 0 0;">
   <div class="container">
     <p class="small muted mb-2"><a href="hotels.html">Hotels</a> / Ella / <strong>Ella Ridge Resort &amp; Spa</strong></p>
-    <div style="display:grid; grid-template-columns: 2fr 1fr 1fr; gap:14px; border-radius: var(--radius-lg); overflow:hidden;">
+    <div class="gallery-trio">
       <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Resort pool" style="height:400px; width:100%; object-fit:cover; grid-row: span 2;" />
       <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Room" style="height:193px; width:100%; object-fit:cover;"
            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80'" />
@@ -42,7 +43,7 @@
 </section>
 
 <section class="section" style="padding-top: 40px;">
-  <div class="container" style="display:grid; grid-template-columns: 1fr 380px; gap:40px; align-items:start;">
+  <div class="container layout-main-aside">
     <div>
       <div class="flex-between">
         <div>
@@ -68,8 +69,8 @@
       <div class="divider"></div>
       <h3>Choose your room</h3>
       <div class="row-list mt-2">
-        <div class="row-item reveal" style="align-items:stretch; padding:0; overflow:hidden;">
-          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=400&q=80" alt="Deluxe room" style="width:180px; object-fit:cover;"
+        <div class="row-item reveal media-row">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=400&q=80" alt="Deluxe room" class="thumb-img"
                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=400&q=80'" />
           <div style="flex:1; padding:18px 22px;">
             <div class="flex-between"><h3>Deluxe Valley View</h3><span class="price">$86 <small>/ night</small></span></div>
@@ -80,8 +81,8 @@
             </div>
           </div>
         </div>
-        <div class="row-item reveal" data-delay="1" style="align-items:stretch; padding:0; overflow:hidden;">
-          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=400&q=80" alt="Suite" style="width:180px; object-fit:cover;" />
+        <div class="row-item reveal media-row" data-delay="1">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=400&q=80" alt="Suite" class="thumb-img" />
           <div style="flex:1; padding:18px 22px;">
             <div class="flex-between"><h3>Ridge Suite + Plunge Pool</h3><span class="price">$154 <small>/ night</small></span></div>
             <p class="muted small">King bed · 58 m² · Private pool · Sleeps 3</p>
@@ -107,7 +108,7 @@
     </div>
 
     <!-- Sticky booking card -->
-    <aside class="panel reveal" style="position:sticky; top:96px;">
+    <aside class="panel reveal sticky-aside">
       <div class="flex-between mb-2"><span class="price" style="font-size:1.5rem;">$86 <small>/ night</small></span><span class="rating">★ 4.8</span></div>
       <div class="form-row">
         <div class="field"><label>Check-in</label><input class="input" type="text" value="14 Aug 2026" /></div>
@@ -126,7 +127,7 @@
 
 <footer class="footer">
   <div class="container footer-bottom" style="border:none; padding-top:0;">
-    <span>© 2026 Ceylon Tour Range</span>
+    <span>© 2026 Ceylon Tour Range by Nonis</span>
     <span><a href="faq.html">Help</a></span>
   </div>
 </footer>

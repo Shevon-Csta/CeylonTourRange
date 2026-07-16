@@ -5,6 +5,17 @@
 (function () {
   "use strict";
 
+  // Pages are static by default (best for screenshots/mockup review).
+  // ?animate=1 re-enables scroll-reveal; ?capture=1 freezes ALL motion.
+  if (/[?&]capture/.test(window.location.search)) {
+    document.documentElement.classList.add("capture");
+    return;
+  }
+  if (!/[?&]animate/.test(window.location.search)) {
+    return; // static mode: no observers needed, everything already visible
+  }
+  document.documentElement.classList.add("animate");
+
   // Reveal-on-scroll
   var observer = new IntersectionObserver(
     function (entries) {

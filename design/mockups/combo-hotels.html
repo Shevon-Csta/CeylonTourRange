@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="capture">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hotels & Checkout (screens 05, 06, 09) — Ceylon Tour Range by Nonis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+
+<div style="background:#04211F; color:#fff; padding:20px 40px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;">▼ 05 · Hotels Directory</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="hotels.html" class="active">Hotels</a>
+      <a href="taxi.html">Taxi</a>
+      <a href="itinerary.html">Trip Planner</a>
+    </div>
+    <button class="nav-burger" aria-label="Open menu">☰</button>
+    <div class="nav-cta"><div class="avatar">SC</div></div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color: var(--amber-500);">Hotels directory</span>
+    <h1 style="color:#fff;">Stay somewhere worth writing home about</h1>
+    <div class="searchbar mt-4" style="max-width: 980px;">
+      <div class="cell"><span>Location</span><input type="text" value="Ella, Sri Lanka" /></div>
+      <div class="cell"><span>Check-in / out</span><input type="text" placeholder="14 Aug – 17 Aug" /></div>
+      <div class="cell"><span>Guests</span><select><option>2 adults · 1 room</option></select></div>
+      <button class="btn btn-accent">Search</button>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="padding-top: 40px;">
+  <div class="container">
+    <div class="flex-between mb-3" style="flex-wrap:wrap;">
+      <div class="flex" style="flex-wrap:wrap;">
+        <span class="chip active" data-toggle>All</span>
+        <span class="chip" data-toggle>Under $50</span>
+        <span class="chip" data-toggle>★ 4.5+</span>
+        <span class="chip" data-toggle>Pool</span>
+        <span class="chip" data-toggle>Breakfast included</span>
+        <span class="chip" data-toggle>Eco lodge</span>
+      </div>
+      <div class="flex">
+        <select class="input" style="width:auto; padding: 9px 14px;"><option>Sort: Recommended</option><option>Price low → high</option><option>Rating</option></select>
+        <div class="tabs" style="margin:0;"><button class="tab active">List</button><button class="tab">Map</button></div>
+      </div>
+    </div>
+
+    <div class="row-list">
+      <!-- Hotel row card -->
+      <a class="row-item reveal media-row" href="hotel-details.html">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Ella Ridge Resort" class="media-row-img" />
+        <div style="flex:1; padding:20px 24px;">
+          <div class="flex-between">
+            <div>
+              <h3>Ella Ridge Resort &amp; Spa</h3>
+              <p class="muted small">Ella · 0.8 km from Nine Arch Bridge</p>
+            </div>
+            <span class="badge badge-green">Free cancellation</span>
+          </div>
+          <div class="flex mt-2"><span class="chip">Pool</span><span class="chip">Spa</span><span class="chip">Breakfast</span><span class="chip">Mountain view</span></div>
+          <div class="flex-between mt-3">
+            <span class="rating">★★★★★ <span class="muted">4.8 (642)</span></span>
+            <span class="price" style="font-size:1.3rem;">$86 <small>/ night</small></span>
+          </div>
+        </div>
+      </a>
+
+      <a class="row-item reveal media-row" data-delay="1" href="hotel-details.html">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80" alt="Lagoon Villa" class="media-row-img" />
+        <div style="flex:1; padding:20px 24px;">
+          <div class="flex-between">
+            <div>
+              <h3>Koggala Lagoon Villa</h3>
+              <p class="muted small">Galle · Beachfront</p>
+            </div>
+            <span class="badge badge-amber">Only 2 rooms left</span>
+          </div>
+          <div class="flex mt-2"><span class="chip">Beachfront</span><span class="chip">A/C</span><span class="chip">Airport pickup</span></div>
+          <div class="flex-between mt-3">
+            <span class="rating">★★★★☆ <span class="muted">4.6 (318)</span></span>
+            <span class="price" style="font-size:1.3rem;">$124 <small>/ night</small></span>
+          </div>
+        </div>
+      </a>
+
+      <a class="row-item reveal media-row" data-delay="2" href="hotel-details.html">
+        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Tea Trails Bungalow" class="media-row-img"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80'" />
+        <div style="flex:1; padding:20px 24px;">
+          <div class="flex-between">
+            <div>
+              <h3>Tea Trails Bungalow</h3>
+              <p class="muted small">Nuwara Eliya · Plantation estate</p>
+            </div>
+            <span class="badge badge-teal">Guide's pick</span>
+          </div>
+          <div class="flex mt-2"><span class="chip">Fireplace</span><span class="chip">Full board</span><span class="chip">Tea tours</span></div>
+          <div class="flex-between mt-3">
+            <span class="rating">★★★★★ <span class="muted">4.9 (207)</span></span>
+            <span class="price" style="font-size:1.3rem;">$210 <small>/ night</small></span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="text-center mt-4"><button class="btn btn-ghost">Load more stays</button></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none; padding-top:0;">
+    <span>© 2026 Ceylon Tour Range by Nonis</span>
+    <span><a href="faq.html">Help</a></span>
+  </div>
+</footer>
+
+<div style="background:#04211F; color:#fff; padding:20px 40px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;">▼ 06 · Hotel Details</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="hotels.html" class="active">Hotels</a>
+      <a href="taxi.html">Taxi</a>
+      <a href="itinerary.html">Trip Planner</a>
+    </div>
+    <button class="nav-burger" aria-label="Open menu">☰</button>
+    <div class="nav-cta"><div class="avatar">SC</div></div>
+  </div>
+</nav>
+
+<section class="section" style="padding: 36px 0 0;">
+  <div class="container">
+    <p class="small muted mb-2"><a href="hotels.html">Hotels</a> / Ella / <strong>Ella Ridge Resort &amp; Spa</strong></p>
+    <div class="gallery-trio">
+      <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Resort pool" style="height:400px; width:100%; object-fit:cover; grid-row: span 2;" />
+      <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Room" style="height:193px; width:100%; object-fit:cover;"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80'" />
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80" alt="Exterior" style="height:193px; width:100%; object-fit:cover;" />
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=600&q=80" alt="Mountain view" style="height:193px; width:100%; object-fit:cover;" />
+      <div style="position:relative;">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="More" style="height:193px; width:100%; object-fit:cover;" />
+        <div style="position:absolute; inset:0; background:rgba(4,33,31,0.55); display:grid; place-items:center; color:#fff; font-weight:800;">+ 38 photos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top: 40px;">
+  <div class="container layout-main-aside">
+    <div>
+      <div class="flex-between">
+        <div>
+          <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Ella Ridge Resort &amp; Spa</h1>
+          <p class="flex mt-1"><span class="rating">★★★★★</span> <strong>4.8</strong> <span class="muted">(642 reviews) · Ella, Badulla District</span></p>
+        </div>
+        <span class="badge badge-teal">Guide's pick</span>
+      </div>
+
+      <div class="divider"></div>
+      <h3>Amenities</h3>
+      <div class="grid-4 mt-2">
+        <div class="flex"><span>🏊</span><span class="small">Infinity pool</span></div>
+        <div class="flex"><span>💆</span><span class="small">Ayurveda spa</span></div>
+        <div class="flex"><span>🍳</span><span class="small">Breakfast incl.</span></div>
+        <div class="flex"><span>📶</span><span class="small">Free Wi-Fi</span></div>
+        <div class="flex"><span>🚗</span><span class="small">Free parking</span></div>
+        <div class="flex"><span>⛰️</span><span class="small">Mountain views</span></div>
+        <div class="flex"><span>🌿</span><span class="small">Garden</span></div>
+        <div class="flex"><span>🐾</span><span class="small">Pet friendly</span></div>
+      </div>
+
+      <div class="divider"></div>
+      <h3>Choose your room</h3>
+      <div class="row-list mt-2">
+        <div class="row-item reveal media-row">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=400&q=80" alt="Deluxe room" class="thumb-img"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=400&q=80'" />
+          <div style="flex:1; padding:18px 22px;">
+            <div class="flex-between"><h3>Deluxe Valley View</h3><span class="price">$86 <small>/ night</small></span></div>
+            <p class="muted small">King bed · 32 m² · Balcony · Sleeps 2</p>
+            <div class="flex-between mt-2">
+              <span class="badge badge-green">Free cancellation until 12 Aug</span>
+              <a class="btn btn-primary btn-sm" href="hotel-booking.html">Select</a>
+            </div>
+          </div>
+        </div>
+        <div class="row-item reveal media-row" data-delay="1">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=400&q=80" alt="Suite" class="thumb-img" />
+          <div style="flex:1; padding:18px 22px;">
+            <div class="flex-between"><h3>Ridge Suite + Plunge Pool</h3><span class="price">$154 <small>/ night</small></span></div>
+            <p class="muted small">King bed · 58 m² · Private pool · Sleeps 3</p>
+            <div class="flex-between mt-2">
+              <span class="badge badge-amber">Only 1 left at this price</span>
+              <a class="btn btn-primary btn-sm" href="hotel-booking.html">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <h3>Guest reviews</h3>
+      <div class="row-list mt-2">
+        <div class="row-item reveal">
+          <div class="avatar">MT</div>
+          <div style="flex:1;">
+            <div class="flex-between"><strong>Marco T.</strong><span class="rating">★★★★★</span></div>
+            <p class="small muted">Woke up to clouds rolling through the valley. Staff arranged our Little Adam's Peak hike before breakfast.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky booking card -->
+    <aside class="panel reveal sticky-aside">
+      <div class="flex-between mb-2"><span class="price" style="font-size:1.5rem;">$86 <small>/ night</small></span><span class="rating">★ 4.8</span></div>
+      <div class="form-row">
+        <div class="field"><label>Check-in</label><input class="input" type="text" value="14 Aug 2026" /></div>
+        <div class="field"><label>Check-out</label><input class="input" type="text" value="17 Aug 2026" /></div>
+      </div>
+      <div class="field"><label>Guests</label><select class="input"><option>2 adults · 1 room</option></select></div>
+      <div class="divider"></div>
+      <div class="flex-between small"><span class="muted">$86 × 3 nights</span><span>$258</span></div>
+      <div class="flex-between small"><span class="muted">Taxes &amp; fees</span><span>$31</span></div>
+      <div class="flex-between mt-2"><strong>Total</strong><strong class="price">$289</strong></div>
+      <a class="btn btn-accent btn-block btn-lg mt-3" href="hotel-booking.html">Reserve now</a>
+      <p class="small muted text-center mt-2">You won't be charged yet</p>
+    </aside>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none; padding-top:0;">
+    <span>© 2026 Ceylon Tour Range by Nonis</span>
+    <span><a href="faq.html">Help</a></span>
+  </div>
+</footer>
+
+<div style="background:#04211F; color:#fff; padding:20px 40px; font-family:'Plus Jakarta Sans',sans-serif; font-weight:800; font-size:0.85rem; letter-spacing:0.12em; text-transform:uppercase;">▼ 09 · Hotel Checkout</div>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="home.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
+    <div class="nav-cta" style="margin-left:auto;"><span class="small muted">🔒 Secure checkout</span></div>
+  </div>
+</nav>
+
+<section class="section" style="padding-top: 40px;">
+  <div class="container" style="max-width: 1000px;">
+    <!-- Steps -->
+    <div class="steps">
+      <div class="step done"><span class="dot">✓</span> Room</div>
+      <div class="step-line done"></div>
+      <div class="step current"><span class="dot">2</span> Guest details</div>
+      <div class="step-line"></div>
+      <div class="step"><span class="dot">3</span> Payment</div>
+      <div class="step-line"></div>
+      <div class="step"><span class="dot">4</span> Confirmation</div>
+    </div>
+
+    <div class="layout-main-aside" style="gap:32px;">
+      <div>
+        <div class="panel reveal is-visible">
+          <h3 class="mb-2">Guest details</h3>
+          <div class="form-row">
+            <div class="field"><label>First name</label><input class="input" value="Shevon" /></div>
+            <div class="field"><label>Last name</label><input class="input" value="Costa" /></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Email</label><input class="input" value="shevoncosta5@gmail.com" /></div>
+            <div class="field"><label>Phone</label><input class="input" placeholder="+94 77 123 4567" /></div>
+          </div>
+          <div class="field"><label>Special requests (optional)</label><textarea class="input" rows="3" placeholder="Early check-in, honeymoon setup…"></textarea></div>
+        </div>
+
+        <div class="panel mt-3 reveal is-visible">
+          <h3 class="mb-2">Payment</h3>
+          <div class="tabs"><button class="tab active">💳 Card</button><button class="tab">PayPal</button><button class="tab">Pay at hotel</button></div>
+          <div class="field"><label>Card number</label><input class="input" placeholder="1234 5678 9012 3456" /></div>
+          <div class="form-row">
+            <div class="field"><label>Expiry</label><input class="input" placeholder="MM / YY" /></div>
+            <div class="field"><label>CVC</label><input class="input" placeholder="•••" /></div>
+          </div>
+          <label class="small muted"><input type="checkbox" checked /> I agree to the <a href="legal.html" style="color:var(--teal-700); font-weight:700;">Terms</a> and <a href="legal.html" style="color:var(--teal-700); font-weight:700;">Cancellation policy</a></label>
+          <button class="btn btn-accent btn-block btn-lg mt-3">Confirm &amp; pay $289</button>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <aside class="panel reveal is-visible sticky-aside" style="padding:0; overflow:hidden;">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Ella Ridge Resort" style="height:150px; width:100%; object-fit:cover;" />
+        <div style="padding:22px;">
+          <strong>Ella Ridge Resort &amp; Spa</strong>
+          <div class="rating small">★★★★★ 4.8</div>
+          <div class="divider"></div>
+          <div class="flex-between small"><span class="muted">Room</span><span>Deluxe Valley View</span></div>
+          <div class="flex-between small"><span class="muted">Check-in</span><span>Thu, 14 Aug 2026</span></div>
+          <div class="flex-between small"><span class="muted">Check-out</span><span>Sun, 17 Aug 2026</span></div>
+          <div class="flex-between small"><span class="muted">Guests</span><span>2 adults</span></div>
+          <div class="divider"></div>
+          <div class="flex-between small"><span class="muted">$86 × 3 nights</span><span>$258</span></div>
+          <div class="flex-between small"><span class="muted">Taxes &amp; fees</span><span>$31</span></div>
+          <div class="flex-between mt-2"><strong>Total</strong><strong class="price">$289</strong></div>
+          <div class="badge badge-green mt-2">Free cancellation until 12 Aug</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none; padding-top:0;">
+    <span>© 2026 Ceylon Tour Range by Nonis</span>
+    <span><a href="faq.html">Help</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

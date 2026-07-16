@@ -1,4 +1,4 @@
-# Ceylon Tour Range — UI Mockups (Phase 2: Design)
+# Ceylon Tour Range by Nonis — UI Mockups (Phase 2: Design)
 
 High-fidelity, browser-viewable mockups for every page in the project sitemap
 (see `CTR.requirements.pdf`). Open `index.html` for a linked gallery of all 15 screens.
@@ -53,6 +53,52 @@ Defined once in `assets/styles.css`; all screens share it.
 
 Tip: import at 1440 px viewport width for desktop frames; resize the browser to
 390 px and re-capture for mobile variants (the CSS is responsive).
+
+## Figma import within the free 10-import limit
+
+html.to.design's free tier allows 10 imports/month. Use the `combo-*.html`
+pages — related screens stacked into one page, so all 15 screens fit in
+**8 imports**:
+
+| Import | File | Screens |
+|--------|------|---------|
+| 1 | `home.html?capture=1` | 01 |
+| 2 | `login.html?capture=1` | 02 |
+| 3 | `combo-attractions.html` | 03, 04 |
+| 4 | `combo-hotels.html` | 05, 06, 09 |
+| 5 | `taxi.html?capture=1` | 07 |
+| 6 | `itinerary.html?capture=1` | 08 |
+| 7 | `combo-portals.html` | 10, 11, 12 |
+| 8 | `combo-support.html` | 13, 14, 15 |
+
+Combo pages are pre-frozen (no `?capture=1` needed) with a dark label bar
+before each screen — in Figma, cut each section into its own frame along
+those bars. Free alternative with no import cap: Builder.io's open-source
+**"HTML to Figma"** plugin (quality varies more than html.to.design).
+
+## Deploying to Vercel (client demo)
+
+This folder is fully self-contained and can be the root of its own repo:
+
+```bash
+# from a copy of this folder as the repo root
+git init && git add . && git commit -m "chore: initial mockups"
+# push to GitHub, then import the repo at vercel.com/new
+# Framework preset: "Other" — no build command, output directory "."
+```
+
+Or deploy without GitHub: `npx vercel --prod` from this folder.
+
+`vercel.json` enables clean URLs, so `/home.html` is served at `/home`
+(the `.html` links keep working — Vercel redirects them).
+
+## Responsive behaviour
+
+All screens adapt at two breakpoints — ≤980 px (sidebars/asides stack, nav
+links collapse behind a burger icon, login visual panel hides) and ≤620 px
+(cards, galleries, and result rows stack; search bar and checkout steps
+reflow; tables scroll horizontally). Test by resizing or via devtools device
+mode at 390 px.
 
 ## Notes
 
