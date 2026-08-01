@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Style Guide — Ceylon Tour Range by Nonis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">C</span> Ceylon Tour Range <small class="brand-sub">by Nonis</small></a>
+    <div class="nav-cta" style="margin-left:auto;"><a class="btn btn-ghost btn-sm" href="index.html">← All screens</a></div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--amber-500);">Design system</span>
+    <h1 style="color:#fff;">Visual language</h1>
+    <p class="lede" style="max-width:620px;">The colours, type, and components every screen is built from. Approving this page approves the look of the whole platform.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Colour -->
+    <div class="section-head"><span class="eyebrow">01 · Colour</span><h2>Palette</h2>
+      <p class="lede">Deep ocean teal carries the brand; sunset amber is reserved for actions so the eye always knows where to click.</p></div>
+    <div class="grid-4 mb-3">
+      <div class="card"><div style="height:120px; background:var(--teal-900);"></div><div class="card-body"><strong>Deep Teal</strong><div class="muted small">#0B3D3A · headings, dark surfaces</div></div></div>
+      <div class="card"><div style="height:120px; background:var(--teal-700);"></div><div class="card-body"><strong>Ocean Teal</strong><div class="muted small">#0E5A54 · primary buttons</div></div></div>
+      <div class="card"><div style="height:120px; background:var(--teal-500);"></div><div class="card-body"><strong>Lagoon</strong><div class="muted small">#16847C · accents, hovers</div></div></div>
+      <div class="card"><div style="height:120px; background:var(--teal-100);"></div><div class="card-body"><strong>Sea Foam</strong><div class="muted small">#DDF0EE · tints, chips</div></div></div>
+      <div class="card"><div style="height:120px; background:linear-gradient(135deg,var(--amber-500),var(--sunset));"></div><div class="card-body"><strong>Sunset Amber</strong><div class="muted small">#F59E0B → #FF8A3D · CTAs</div></div></div>
+      <div class="card"><div style="height:120px; background:var(--sand-50); border-bottom:1px solid var(--sand-100);"></div><div class="card-body"><strong>Warm Sand</strong><div class="muted small">#FAF7F1 · page background</div></div></div>
+      <div class="card"><div style="height:120px; background:var(--ink-900);"></div><div class="card-body"><strong>Ink</strong><div class="muted small">#12211F · body text</div></div></div>
+      <div class="card"><div style="height:120px; background:var(--ink-400);"></div><div class="card-body"><strong>Muted Ink</strong><div class="muted small">#7E938F · secondary text</div></div></div>
+    </div>
+
+    <!-- Type -->
+    <div class="section-head mt-4"><span class="eyebrow">02 · Typography</span><h2>Type scale</h2>
+      <p class="lede">Fraunces gives headlines an editorial, travel-magazine feel. Plus Jakarta Sans keeps interface text crisp at small sizes.</p></div>
+    <div class="panel mb-3">
+      <h1 style="margin-bottom:4px;">Explore Sri Lanka</h1>
+      <p class="muted small mb-3">Fraunces Semibold · display headline · clamp 2.4–4rem</p>
+      <div class="divider"></div>
+      <h2 style="margin-bottom:4px;">Where the island calls</h2>
+      <p class="muted small mb-3">Fraunces Semibold · section heading · clamp 1.8–2.6rem</p>
+      <div class="divider"></div>
+      <h3 style="margin-bottom:4px;">Sigiriya Rock Fortress</h3>
+      <p class="muted small mb-3">Fraunces Semibold · card title · 1.25rem</p>
+      <div class="divider"></div>
+      <p class="lede" style="margin-bottom:4px;">Book taxis, reserve hotels, and build day-by-day itineraries with local guides.</p>
+      <p class="muted small mb-3">Plus Jakarta Sans Regular · lead paragraph · 1.06rem</p>
+      <div class="divider"></div>
+      <p style="margin-bottom:4px;">Standard body copy sits at 1rem with generous line height for comfortable reading on long pages.</p>
+      <p class="muted small">Plus Jakarta Sans Regular · body · 1rem / 1.6</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="section-head mt-4"><span class="eyebrow">03 · Components</span><h2>Buttons &amp; controls</h2>
+      <p class="lede">Fully rounded pill buttons throughout, with a subtle moulded edge so primary actions feel tactile.</p></div>
+    <div class="grid-2 mb-3">
+      <div class="panel">
+        <strong class="small">Buttons</strong>
+        <div class="flex mt-2" style="flex-wrap:wrap;">
+          <button class="btn btn-accent btn-lg">Book now</button>
+          <button class="btn btn-primary">Primary action</button>
+          <button class="btn btn-ghost">Secondary</button>
+          <button class="btn btn-primary btn-sm">Small</button>
+        </div>
+        <div class="divider"></div>
+        <strong class="small">Chips &amp; filters</strong>
+        <div class="flex mt-2" style="flex-wrap:wrap;">
+          <span class="chip active">All</span><span class="chip">🏛️ Heritage</span><span class="chip">🏖️ Beaches</span><span class="chip">⛰️ Hiking</span>
+        </div>
+        <div class="divider"></div>
+        <strong class="small">Status badges</strong>
+        <div class="flex mt-2" style="flex-wrap:wrap;">
+          <span class="badge badge-green">Confirmed</span><span class="badge badge-amber">Pending</span>
+          <span class="badge badge-teal">Guide's pick</span><span class="badge badge-red">Cancelled</span>
+        </div>
+        <div class="divider"></div>
+        <strong class="small">Tabs</strong>
+        <div class="tabs mt-2" style="margin-bottom:0;"><button class="tab active">Upcoming</button><button class="tab">Past</button><button class="tab">Cancelled</button></div>
+      </div>
+      <div class="panel">
+        <strong class="small">Form fields</strong>
+        <div class="mt-2">
+          <div class="field"><label>Destination</label><input class="input" value="Ella, Sri Lanka" /></div>
+          <div class="field"><label>Travellers</label><select class="input"><option>2 adults · 1 room</option></select></div>
+          <div class="field"><label>Notes</label><textarea class="input" rows="2" placeholder="Anything we should know?"></textarea></div>
+        </div>
+        <div class="divider"></div>
+        <strong class="small">Booking progress</strong>
+        <div class="steps mt-2" style="margin-bottom:0;">
+          <div class="step done"><span class="dot">✓</span> Room</div>
+          <div class="step-line done"></div>
+          <div class="step current"><span class="dot">2</span> Details</div>
+          <div class="step-line"></div>
+          <div class="step"><span class="dot">3</span> Pay</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="section-head mt-4"><span class="eyebrow">04 · Content</span><h2>Cards &amp; data</h2></div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=800&q=80" alt="Sigiriya"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80'" />
+          <span class="badge">Heritage</span>
+        </div>
+        <div class="card-body">
+          <h3>Attraction card</h3>
+          <p class="muted small">Image, category badge, rating, price.</p>
+          <div class="card-meta"><span class="rating">★★★★★ <span class="muted">4.9</span></span><span class="price">$30 <small>/ entry</small></span></div>
+        </div>
+      </div>
+      <div class="stat" style="align-self:start;">
+        <div class="stat-label">KPI tile</div>
+        <div class="stat-value">$48.2k</div>
+        <span class="stat-delta up">▲ 18% MoM</span>
+        <div class="divider"></div>
+        <div class="stat-label">Second metric</div>
+        <div class="stat-value">1,312</div>
+        <span class="stat-delta up">▲ 9%</span>
+      </div>
+      <div class="panel" style="align-self:start;">
+        <strong class="small">List row</strong>
+        <div class="row-list mt-2">
+          <div class="row-item"><div class="row-icon">🚕</div><div style="flex:1;"><strong class="small">Driver assigned</strong><div class="muted small">Kasun D. · ★ 4.9</div></div></div>
+          <div class="row-item"><div class="row-icon">🏨</div><div style="flex:1;"><strong class="small">Booking confirmed</strong><div class="muted small">Ella Ridge Resort</div></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-bottom" style="border:none; padding-top:0;">
+    <span>© 2026 Ceylon Tour Range by Nonis · Style guide</span>
+    <span>Team Raspberry Solutions</span>
+  </div>
+</footer>
+
+<script src="assets/mock.js"></script>
+</body>
+</html>
