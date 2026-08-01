@@ -20,36 +20,80 @@
       <a href="taxi.html">Taxi</a>
       <a href="itinerary.html">Trip Planner</a>
     </div>
-    <button class="nav-burger" aria-label="Open menu">☰</button>
-    <div class="nav-cta"><span style="position:relative;">🔔<span style="position:absolute;top:-4px;right:-6px;width:16px;height:16px;border-radius:50%;background:var(--sunset);color:#fff;font-size:0.6rem;font-weight:800;display:grid;place-items:center;">3</span></span><div class="avatar">SC</div></div>
+    <button class="nav-burger" aria-label="Open menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <div class="nav-cta">
+      <span style="position:relative; display:inline-flex; color:var(--ink-600);">
+        <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6Z"/><path d="M13.7 20a2 2 0 0 1-3.4 0"/></svg>
+        <span style="position:absolute;top:-3px;right:-5px;width:15px;height:15px;border-radius:50%;background:var(--sunset);color:#fff;font-size:0.6rem;font-weight:800;display:grid;place-items:center;border:2px solid var(--sand-50);">3</span>
+      </span>
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=3&w=120&h=120&q=80" alt="Shevon Costa" style="width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid rgba(14,90,84,0.15);" />
+    </div>
   </div>
 </nav>
 
 <div class="app-shell">
   <aside class="sidebar">
+    <div class="side-profile">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=3&w=120&h=120&q=80" alt="Shevon Costa"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=facearea&facepad=3&w=120&h=120&q=80'" />
+      <div>
+        <strong>Shevon Costa</strong>
+        <span>Explorer · Member since 2025</span>
+      </div>
+    </div>
     <span class="side-title">My account</span>
-    <a href="dashboard.html" class="active">🏠 Overview</a>
-    <a href="dashboard.html">🧾 Bookings</a>
-    <a href="itinerary.html">🗺️ My itineraries</a>
-    <a href="dashboard.html">❤️ Saved places</a>
-    <a href="dashboard.html">🔔 Notifications</a>
+    <a href="dashboard.html" class="active"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V19a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1Z"/></svg> Overview</a>
+    <a href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3v18l2-1.4 2 1.4 2-1.4 2 1.4 2-1.4 2 1.4V3l-2 1.4L13 3l-2 1.4L9 3 7 4.4Z"/><path d="M8.5 8.5h7M8.5 12h7M8.5 15.5h4"/></svg> Bookings</a>
+    <a href="itinerary.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4-6 2.5v13L9 17l6 3 6-2.5v-13L15 7 9 4Z"/><path d="M9 4v13M15 7v13"/></svg> My itineraries</a>
+    <a href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-9.6A4.4 4.4 0 0 1 12 7.6a4.4 4.4 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20Z"/></svg> Saved places</a>
+    <a href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6Z"/><path d="M13.7 20a2 2 0 0 1-3.4 0"/></svg> Notifications</a>
     <span class="side-title">Settings</span>
-    <a href="dashboard.html">👤 Profile</a>
-    <a href="dashboard.html">💳 Payment methods</a>
-    <a href="login.html">↩ Log out</a>
+    <a href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg> Profile</a>
+    <a href="dashboard.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6 15h3"/></svg> Payment methods</a>
+    <a href="login.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 20H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h3.5"/><path d="M15 16.5 19.5 12 15 7.5M19.5 12H9"/></svg> Log out</a>
   </aside>
 
   <main class="app-main">
     <div class="app-header">
-      <div><h2 style="font-size:1.7rem;">Ayubowan, Shevon 👋</h2><p class="muted small">Your trip to Ella starts in <strong>6 days</strong>.</p></div>
-      <a class="btn btn-primary" href="itinerary.html">+ New itinerary</a>
+      <div>
+        <h2 style="font-size:1.7rem;">Ayubowan, Shevon</h2>
+        <p class="muted small">Your next journey starts in 6 days.</p>
+      </div>
+      <div class="flex">
+        <a class="btn btn-ghost btn-sm" href="attractions.html">Explore</a>
+        <a class="btn btn-primary" href="itinerary.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> New itinerary</a>
+      </div>
+    </div>
+
+    <!-- Next trip hero -->
+    <div class="trip-hero mb-3">
+      <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1600&q=80" alt="Ella, Sri Lanka"
+           onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80'" />
+      <div class="trip-body">
+        <div class="flex-between" style="align-items:flex-end;">
+          <div>
+            <span class="badge badge-amber" style="background:rgba(245,158,11,0.92); color:#fff;">Next trip</span>
+            <h2 style="color:#fff; margin-top:10px;">Honeymoon Loop</h2>
+            <p class="small" style="color:rgba(255,255,255,0.82);">12 – 19 Aug 2026 · Colombo → Kandy → Ella → Galle · 12 stops</p>
+            <div class="flex mt-2">
+              <a class="btn btn-accent btn-sm" href="itinerary.html">Open itinerary</a>
+              <a class="btn btn-ghost btn-sm" style="background:rgba(255,255,255,0.14); color:#fff; border-color:rgba(255,255,255,0.3);" href="taxi.html">Track airport pickup</a>
+            </div>
+          </div>
+          <div class="countdown hide-mobile">
+            <div><strong>06</strong><span>Days</span></div>
+            <div><strong>14</strong><span>Hrs</span></div>
+            <div><strong>32</strong><span>Min</span></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="stat-grid">
-      <div class="stat reveal is-visible"><div class="stat-label">Upcoming bookings</div><div class="stat-value">4</div><span class="stat-delta up">2 hotels · 2 taxis</span></div>
-      <div class="stat reveal is-visible"><div class="stat-label">Active itinerary</div><div class="stat-value">8 days</div><span class="stat-delta">Honeymoon Loop</span></div>
-      <div class="stat reveal is-visible"><div class="stat-label">Saved places</div><div class="stat-value">17</div><span class="stat-delta up">+3 this week</span></div>
-      <div class="stat reveal is-visible"><div class="stat-label">Reviews written</div><div class="stat-value">6</div><span class="stat-delta">★ 4.7 avg given</span></div>
+      <div class="stat"><div class="stat-label">Upcoming bookings</div><div class="stat-value">4</div><span class="stat-delta up">2 hotels · 2 taxis</span></div>
+      <div class="stat"><div class="stat-label">Trip length</div><div class="stat-value">8 days</div><span class="stat-delta">4 destinations</span></div>
+      <div class="stat"><div class="stat-label">Saved places</div><div class="stat-value">17</div><span class="stat-delta up">+3 this week</span></div>
+      <div class="stat"><div class="stat-label">Total spent</div><div class="stat-value">$1,284</div><span class="stat-delta">across 6 bookings</span></div>
     </div>
 
     <div class="tabs">
@@ -60,30 +104,124 @@
 
     <div class="table-wrap mb-3">
       <table>
-        <thead><tr><th>Booking</th><th>Type</th><th>Date</th><th>Amount</th><th>Status</th><th></th></tr></thead>
+        <thead><tr><th colspan="2">Booking</th><th>Date</th><th>Amount</th><th>Status</th><th></th></tr></thead>
         <tbody>
-          <tr><td><strong>Ella Ridge Resort &amp; Spa</strong><div class="muted small">Deluxe Valley View · 3 nights</div></td><td>🏨 Hotel</td><td>14–17 Aug</td><td>$289</td><td><span class="badge badge-green">Confirmed</span></td><td><a class="btn btn-ghost btn-sm" href="hotel-details.html">View</a></td></tr>
-          <tr><td><strong>CMB Airport → Ella</strong><div class="muted small">Sedan · Kasun D.</div></td><td>🚕 Taxi</td><td>14 Aug, 06:00</td><td>$78</td><td><span class="badge badge-green">Confirmed</span></td><td><a class="btn btn-ghost btn-sm" href="taxi.html">Track</a></td></tr>
-          <tr><td><strong>Koggala Lagoon Villa</strong><div class="muted small">Beachfront room · 2 nights</div></td><td>🏨 Hotel</td><td>17–19 Aug</td><td>$248</td><td><span class="badge badge-amber">Pending payment</span></td><td><a class="btn btn-ghost btn-sm" href="hotel-booking.html">Pay</a></td></tr>
-          <tr><td><strong>Ella → Galle</strong><div class="muted small">Van · driver TBD</div></td><td>🚕 Taxi</td><td>17 Aug, 09:00</td><td>$96</td><td><span class="badge badge-teal">Scheduled</span></td><td><a class="btn btn-ghost btn-sm" href="taxi.html">Edit</a></td></tr>
+          <tr>
+            <td style="width:64px;"><img class="thumb-sm" src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=200&q=80" alt="Ella Ridge Resort" /></td>
+            <td><strong>Ella Ridge Resort &amp; Spa</strong><div class="muted small">Deluxe Valley View · 3 nights</div></td>
+            <td>14–17 Aug</td><td><strong>$289</strong></td>
+            <td><span class="badge badge-green">Confirmed</span></td>
+            <td><a class="btn btn-ghost btn-sm" href="hotel-details.html">View</a></td>
+          </tr>
+          <tr>
+            <td><div class="thumb-sm" style="display:grid;place-items:center;background:var(--teal-100);color:var(--teal-700);"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14M6.5 17V9.5l1.8-3.6a2 2 0 0 1 1.8-1.1h3.8a2 2 0 0 1 1.8 1.1L17.5 9.5V17"/><path d="M6.5 9.5h11"/><circle cx="8.5" cy="17" r="1.6"/><circle cx="15.5" cy="17" r="1.6"/></svg></div></td>
+            <td><strong>CMB Airport → Ella</strong><div class="muted small">Sedan · Kasun D. · 232 km</div></td>
+            <td>14 Aug, 06:00</td><td><strong>$78</strong></td>
+            <td><span class="badge badge-green">Confirmed</span></td>
+            <td><a class="btn btn-ghost btn-sm" href="taxi.html">Track</a></td>
+          </tr>
+          <tr>
+            <td><img class="thumb-sm" src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=200&q=80" alt="Koggala Lagoon Villa" /></td>
+            <td><strong>Koggala Lagoon Villa</strong><div class="muted small">Beachfront room · 2 nights</div></td>
+            <td>17–19 Aug</td><td><strong>$248</strong></td>
+            <td><span class="badge badge-amber">Payment due</span></td>
+            <td><a class="btn btn-primary btn-sm" href="hotel-booking.html">Pay now</a></td>
+          </tr>
+          <tr>
+            <td><div class="thumb-sm" style="display:grid;place-items:center;background:var(--teal-100);color:var(--teal-700);"><svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 16V8a2 2 0 0 1 2-2h9l4 4.5V16"/><path d="M3 16h18"/><path d="M14 6v4.5h4.5"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="16.5" cy="16.5" r="1.8"/></svg></div></td>
+            <td><strong>Ella → Galle</strong><div class="muted small">Van · driver assigned 24 h before</div></td>
+            <td>17 Aug, 09:00</td><td><strong>$96</strong></td>
+            <td><span class="badge badge-teal">Scheduled</span></td>
+            <td><a class="btn btn-ghost btn-sm" href="taxi.html">Edit</a></td>
+          </tr>
         </tbody>
       </table>
     </div>
 
-    <div class="grid-2">
-      <div class="panel">
-        <div class="flex-between mb-2"><h3>Saved itineraries</h3><a class="small" style="color:var(--teal-700);font-weight:700;" href="itinerary.html">See all →</a></div>
-        <div class="row-list">
-          <a class="row-item" href="itinerary.html"><div class="row-icon">🌴</div><div style="flex:1;"><strong class="small">Honeymoon Loop</strong><div class="muted small">8 days · 12 stops · shared with 2</div></div><span class="badge badge-teal">Active</span></a>
-          <a class="row-item" href="itinerary.html"><div class="row-icon">🐘</div><div style="flex:1;"><strong class="small">Wildlife Weekend</strong><div class="muted small">3 days · Yala &amp; Udawalawe</div></div><span class="badge badge-amber">Draft</span></a>
+    <div class="layout-2col-980">
+      <!-- Saved itineraries with imagery -->
+      <div>
+        <div class="panel mb-3">
+          <div class="flex-between mb-2">
+            <h3>Saved itineraries</h3>
+            <a class="small" style="color:var(--teal-700);font-weight:700;" href="itinerary.html">See all →</a>
+          </div>
+          <div class="row-list">
+            <a class="row-item" href="itinerary.html">
+              <img class="thumb-md" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=200&q=80" alt="Honeymoon Loop" />
+              <div style="flex:1;">
+                <strong>Honeymoon Loop</strong>
+                <div class="muted small">8 days · 12 stops · shared with 2 people</div>
+                <div class="flex mt-1"><span class="badge badge-teal">Active</span><span class="badge badge-green">All booked</span></div>
+              </div>
+              <svg class="icon muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+            </a>
+            <a class="row-item" href="itinerary.html">
+              <img class="thumb-md" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=200&q=80" alt="Wildlife Weekend" />
+              <div style="flex:1;">
+                <strong>Wildlife Weekend</strong>
+                <div class="muted small">3 days · Yala &amp; Udawalawe · draft</div>
+                <div class="flex mt-1"><span class="badge badge-amber">Draft</span><span class="badge badge-red">No stays booked</span></div>
+              </div>
+              <svg class="icon muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h15M14 6.5l5.5 5.5-5.5 5.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Saved places tiles -->
+        <div class="panel">
+          <div class="flex-between mb-2"><h3>Saved places</h3><span class="badge badge-teal">17 saved</span></div>
+          <div class="grid-4" style="gap:12px;">
+            <a class="tile" href="attraction-details.html"><img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=300&q=80" alt="Sigiriya" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=300&q=80'" /><span>Sigiriya</span></a>
+            <a class="tile" href="attraction-details.html"><img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=300&q=80" alt="Nine Arch Bridge" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=300&q=80'" /><span>Nine Arch</span></a>
+            <a class="tile" href="attraction-details.html"><img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=300&q=80" alt="Koggala" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=300&q=80'" /><span>Koggala</span></a>
+            <a class="tile" href="attraction-details.html"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=300&q=80" alt="Mirissa" /><span>Mirissa</span></a>
+          </div>
         </div>
       </div>
-      <div class="panel">
-        <div class="flex-between mb-2"><h3>Notifications</h3><span class="badge badge-red">3 new</span></div>
-        <div class="row-list">
-          <div class="row-item"><div class="row-icon">💳</div><div><strong class="small">Payment due for Koggala Lagoon Villa</strong><div class="muted small">Complete by 10 Aug to hold your room · 2 h ago</div></div></div>
-          <div class="row-item"><div class="row-icon">🚕</div><div><strong class="small">Driver assigned: Kasun D. (★ 4.9)</strong><div class="muted small">Airport pickup 14 Aug · yesterday</div></div></div>
-          <div class="row-item"><div class="row-icon">🗺️</div><div><strong class="small">Emma added 2 stops to Honeymoon Loop</strong><div class="muted small">Ravana Falls, tea factory · 2 days ago</div></div></div>
+
+      <!-- Right rail -->
+      <div>
+        <div class="panel mb-3">
+          <div class="flex-between mb-2"><h3>Notifications</h3><span class="badge badge-red">3 new</span></div>
+          <div class="row-list">
+            <div class="row-item">
+              <div class="row-icon" style="background:#FEF3D8; color:var(--amber-600);"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6 15h3"/></svg></div>
+              <div><strong class="small">Payment due — Koggala Lagoon Villa</strong><div class="muted small">Complete by 10 Aug to hold your room · 2 h ago</div></div>
+            </div>
+            <div class="row-item">
+              <div class="row-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14M6.5 17V9.5l1.8-3.6a2 2 0 0 1 1.8-1.1h3.8a2 2 0 0 1 1.8 1.1L17.5 9.5V17"/><path d="M6.5 9.5h11"/><circle cx="8.5" cy="17" r="1.6"/><circle cx="15.5" cy="17" r="1.6"/></svg></div>
+              <div><strong class="small">Driver assigned: Kasun D.</strong><div class="muted small">Airport pickup 14 Aug · yesterday</div></div>
+            </div>
+            <div class="row-item">
+              <div class="row-icon" style="background:#DCF3E8; color:var(--success);"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 5.2a3.5 3.5 0 0 1 0 5.6M17.5 14.2A6.5 6.5 0 0 1 21.5 20"/></svg></div>
+              <div><strong class="small">Emma added 2 stops to Honeymoon Loop</strong><div class="muted small">Ravana Falls, tea factory · 2 days ago</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guide recommendation -->
+        <div class="panel" style="padding:0; overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Tea country" style="width:100%; height:130px; object-fit:cover;"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80'" />
+          <div style="padding:22px;">
+            <span class="eyebrow">Recommended for you</span>
+            <h3 style="margin-top:4px;">Halpewatte Tea Factory</h3>
+            <p class="muted small mt-1">A 20-minute detour from your Day 3 route in Ella. Morning tours include the full leaf-to-cup process.</p>
+            <div class="flex-between mt-3">
+              <span class="rating"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.2 4.1 1 5.8-5.3-2.8-5.3 2.8 1-5.8-4.2-4.1 5.9-.9L12 3.5Z"/></svg><strong>4.7</strong></span>
+              <a class="btn btn-ghost btn-sm" href="itinerary.html">Add to trip</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel mt-3" style="background:linear-gradient(135deg, var(--teal-950), var(--teal-700)); color:rgba(255,255,255,0.86); border:none;">
+          <div class="flex mb-2" style="color:var(--amber-500);">
+            <svg class="icon icon-lg" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 17.5h6"/><path d="M10 20.5h4"/><path d="M12 3a5.5 5.5 0 0 1 3.3 9.9c-.5.4-.8 1-.8 1.6h-5c0-.6-.3-1.2-.8-1.6A5.5 5.5 0 0 1 12 3Z"/></svg>
+            <strong style="color:#fff;">Travel tip</strong>
+          </div>
+          <p class="small">Trains from Kandy to Ella sell out in season. Reserve 2nd-class window seats at least three days ahead.</p>
+          <p class="small mt-2" style="color:var(--amber-500); font-weight:700;">— Nuwan, verified guide</p>
         </div>
       </div>
     </div>
